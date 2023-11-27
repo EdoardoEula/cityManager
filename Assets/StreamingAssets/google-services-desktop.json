@@ -1,0 +1,37 @@
+{
+  "project_info": {
+    "project_number": "640435795918",
+    "firebase_url": "https://citymanager-572ad-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "citymanager-572ad",
+    "storage_bucket": "citymanager-572ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:640435795918:ios:e90636c4fee5c315ac1d9f",
+        "android_client_info": {
+          "package_name": "com.gemsc.CityManager"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7cRODxDPp_Dg31iNkRMm7R4sE303O6VU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "640435795918-co3c0u5v0e1s21vf389gogeb37n1qt2h.apps.googleusercontent.com"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
