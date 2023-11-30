@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{da3efa13-852d-a96d-5394-14d2880d2eec}</ProjectGuid>
+    <ProjectGuid>{b4c33941-0d01-1507-3ca4-f9d510c57b5f}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -329,40 +329,40 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Analytics">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Auth">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Database">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
      </Reference>
      <Reference Include="Mono.Data.Sqlite">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Platform">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -746,82 +746,82 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="com.leantween.editor.csproj">
-      <Project>{625dca20-1a75-aff0-5c23-3106f5d2025c}</Project>
+      <Project>{824580ac-aa7b-8080-e2a3-494ce1752ff0}</Project>
       <Name>com.leantween.editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.leantween.csproj">
-      <Project>{7c0fc349-3c33-d273-5751-f453b7812f5b}</Project>
+      <Project>{7172d6d6-2678-0fa8-3cf0-5288c04d5a30}</Project>
       <Name>com.leantween</Name>
     </ProjectReference>
   </ItemGroup>
