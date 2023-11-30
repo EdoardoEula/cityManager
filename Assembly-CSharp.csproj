@@ -85,6 +85,7 @@
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.6.0" />
      <Folder Include="Assets/Objects/Prefabs" />
      <Folder Include="Assets/Objects/PolygonAssetss" />
+     <None Include="Assets/LeanTween/ReadMe.txt" />
      <Folder Include="Assets/Objects/PolygonAssetss/Lowpoly farm animals" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
      <Folder Include="Assets/Textures" />
@@ -98,9 +99,11 @@
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Generic" />
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-auth-unity/11.6.0" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity" />
+     <None Include="Assets/LeanTween/package.json" />
      <Folder Include="Assets/Objects/Industrial/Prefabs" />
      <Folder Include="Assets/PolygonCity/Prefabs" />
      <Folder Include="Assets/TextMesh Pro/Resources/Fonts &amp; Materials" />
+     <Folder Include="Assets/LeanTween/Documentation/elements" />
      <Folder Include="Assets/Materials" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Materials/FX_Materials" />
@@ -111,9 +114,11 @@
      <Folder Include="Assets/UI/Residential/Accessibility to shops" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs/Environments" />
      <Folder Include="Assets/Objects/Prefabs/Buildings" />
+     <Folder Include="Assets/LeanTween/Documentation/classes" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs/Environments/Custom" />
      <Folder Include="Assets/Objects/Prefabs/Props" />
      <Folder Include="Assets/UI/Innovation/Green Areas" />
+     <Folder Include="Assets/LeanTween" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Characters" />
      <Folder Include="Assets/Firebase/m2repository/com/google" />
@@ -132,6 +137,7 @@
      <None Include="Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl" />
      <Folder Include="Assets/UI/Residential/Car emission" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Materials" />
+     <Folder Include="Assets/LeanTween/Documentation" />
      <Folder Include="Assets/UI/Industry" />
      <Folder Include="Assets/Firebase" />
      <Folder Include="Assets/UI/Buttons" />
@@ -187,6 +193,7 @@
      <Folder Include="Assets/Firebase/Plugins/x86_64" />
      <Folder Include="Assets/Objects/PolygonAssetss/Lowpoly farm animals/Animals" />
      <Folder Include="Assets/Objects/Industrial/Prefabs/Props" />
+     <Folder Include="Assets/LeanTween/Documentation/assets" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonIcons/Materials" />
      <Folder Include="Assets/Editor Default Resources/Firebase" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Vehicles" />
@@ -215,6 +222,7 @@
      <Folder Include="Assets/TextMesh Pro/Documentation" />
      <Folder Include="Assets/Scripts/CharacterMovement/farm" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets/LeanTween/Documentation/assets/css" />
      <None Include="Assets/TextMesh Pro/Sprites/EmojiOne.json" />
      <Folder Include="Assets/UI/Landfarm/Breeding" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
@@ -979,6 +987,14 @@
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{da3efa13-852d-a96d-5394-14d2880d2eec}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.leantween.editor.csproj">
+      <Project>{625dca20-1a75-aff0-5c23-3106f5d2025c}</Project>
+      <Name>com.leantween.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.leantween.csproj">
+      <Project>{7c0fc349-3c33-d273-5751-f453b7812f5b}</Project>
+      <Name>com.leantween</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

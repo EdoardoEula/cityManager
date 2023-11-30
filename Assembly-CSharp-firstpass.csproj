@@ -816,6 +816,14 @@
      </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="com.leantween.editor.csproj">
+      <Project>{625dca20-1a75-aff0-5c23-3106f5d2025c}</Project>
+      <Name>com.leantween.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="com.leantween.csproj">
+      <Project>{7c0fc349-3c33-d273-5751-f453b7812f5b}</Project>
+      <Name>com.leantween</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
