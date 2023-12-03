@@ -4,10 +4,10 @@ using UnityEngine.UI;
 
 public class CollectionManager : MonoBehaviour
 {
-    public Text CollectedText; // Reference to the UI Text element
+    public Text collectedText; // Reference to the UI Text element
     private int collectedCount = 0;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Collectible"))
         {
@@ -27,9 +27,9 @@ public class CollectionManager : MonoBehaviour
 
     private void UpdateCollectedText()
     {
-        if (CollectedText != null)
+        if (collectedText != null)
         {
-            CollectedText.text = "Collected: " + collectedCount;
+            collectedText.text = "Collected: " + collectedCount;
         }
     }
 }

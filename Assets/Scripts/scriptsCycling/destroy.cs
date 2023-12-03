@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class DisappearOnCollision : MonoBehaviour
 {
     public float speed;
+    private int count = 0;
+    public TextMeshProUGUI countText;
     void UpDate()
     {
         //transform.Translate(Vector2.left * speed * Time.deltaTime);
@@ -20,8 +22,17 @@ public class DisappearOnCollision : MonoBehaviour
         {
             Debug.Log("collided with the player");
             Destroy(gameObject);
+            count = count + 1;
+            SetCountText();
         }
         
+        
+    }
+    void SetCountText()
+    {
+        // Update the count text with the current count.
+        countText.text = " " + count.ToString();
+
         
     }
 }
