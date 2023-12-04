@@ -45,6 +45,7 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/scriptsCycling/destroy.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/characterInteractionfarm.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/uffici/CharacterMovement.cs" />
      <Compile Include="Assets/Scripts/SignUpManager.cs" />
@@ -52,6 +53,7 @@
      <Compile Include="Assets/Scripts/DeactivateCanvas.cs" />
      <Compile Include="Assets/Scripts/Canva_start.cs" />
      <Compile Include="Assets/Scripts/StartLevel.cs" />
+     <Compile Include="Assets/Scripts/scriptsCycling/spawner.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/MouseDownExample.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/residence/chactermovementresidence.cs" />
      <Compile Include="Assets/DialogueFarm/Dialogue.cs" />
@@ -63,14 +65,17 @@
      <Compile Include="Assets/Scripts/CharacterMovement/residence/characterInteractionresidence.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/characterMovementfarm.cs" />
      <Compile Include="Assets/Scripts/Choice_click.cs" />
-     <Compile Include="Assets/Scripts/appear.cs" />
+     <Compile Include="Assets/Scripts/scriptsCycling/CharacterMoving.cs" />
      <Compile Include="Assets/DialogueFarm/CSVReader.cs" />
+     <Compile Include="Assets/Scripts/scriptsCycling/ScrollingMovement.cs" />
      <Compile Include="Assets/Scripts/ChangeScene.cs" />
      <Compile Include="Assets/Scripts/Info_click.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Scripts/ChangeCamera.cs" />
+     <Compile Include="Assets/Scripts/scriptsCycling/CollectedText.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/Industry/characterInteractionindustry.cs" />
      <Compile Include="Assets/Scripts/Panel_start.cs" />
+     <Compile Include="Assets/Scripts/scriptsCycling/timer.cs" />
      <Compile Include="Assets/Scripts/CharacterMovement/Industry/characterMovementindustry.cs" />
      <Folder Include="Assets" />
      <Folder Include="Library/BuildInstructions" />
@@ -88,6 +93,7 @@
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/11.6.0" />
      <Folder Include="Assets/Objects/Prefabs" />
      <Folder Include="Assets/Objects/PolygonAssetss" />
+     <Folder Include="Assets/New Folder" />
      <None Include="Assets/LeanTween/ReadMe.txt" />
      <Folder Include="Assets/Objects/PolygonAssetss/Lowpoly farm animals" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
@@ -119,6 +125,7 @@
      <Folder Include="Assets/Objects/Prefabs/Buildings" />
      <Folder Include="Assets/LeanTween/Documentation/classes" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs/Environments/Custom" />
+     <Folder Include="Assets/Scripts/scriptsCycling" />
      <Folder Include="Assets/Objects/Prefabs/Props" />
      <Folder Include="Assets/UI/Innovation/Green Areas" />
      <Folder Include="Assets/LeanTween" />
@@ -183,6 +190,7 @@
      <Folder Include="Assets/UI/Industry/Factor Efficiency" />
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity" />
      <Folder Include="Assets/TextMesh Pro/Resources/Style Sheets" />
+     <Folder Include="Assets/assetCycling" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs" />
      <Folder Include="Assets/UI/Innovation/Public Transport" />
      <Folder Include="Assets/TextMesh Pro/Fonts" />
@@ -216,6 +224,7 @@
      <Folder Include="Assets/UI/Landfarm/Cultivation" />
      <Folder Include="Assets/Objects/Models" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/FX" />
+     <Folder Include="Assets/UI/Residential/Waste" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs" />
      <None Include="Assets/Firebase/m2repository/com/google/firebase/firebase-database-unity/maven-metadata.xml" />
@@ -501,40 +510,40 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Analytics">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Auth">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Database">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
      </Reference>
      <Reference Include="Mono.Data.Sqlite">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Platform">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -918,73 +927,73 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>/Users/edoardoeula/Desktop/ProvaGit/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
