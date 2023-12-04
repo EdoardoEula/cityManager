@@ -13,7 +13,8 @@ public class menu_settings_logout : MonoBehaviour
     public Button logout_btn;
     public Canvas menuCanvas;
     public int slideDuration = 1;
-    public float menuWidth = 200f; // Adjust this value based on your menu width
+    public Transform menuInPosition;
+    public Transform menuOutPosition;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class menu_settings_logout : MonoBehaviour
 
     public void OpenMenu()
     {
-        StartCoroutine(SlideInMenu(menuCanvas));
+        StartCoroutine(SlideMenu(menuCanvas, menuInPosition));
         closeMenu_btn.gameObject.SetActive(true);
         openMenu_btn.interactable = false;
     }
@@ -40,36 +41,30 @@ public class menu_settings_logout : MonoBehaviour
     
     public void CloseMenu()
     {
-        StartCoroutine(SlideOutMenu(menuCanvas));
+        StartCoroutine(SlideMenu(menuCanvas, menuOutPosition));
         closeMenu_btn.gameObject.SetActive(false);
         openMenu_btn.interactable = true;
     }
     
-    private IEnumerator SlideInMenu(Canvas canvas)
+    private IEnumerator SlideMenu(Canvas canvas, Transform targetPosition)
     {
         canvas.gameObject.SetActive(true);
+        // Calculate the local position of the targetPosition relative to the canvas
         RectTransform menuRect = canvas.GetComponent<RectTransform>();
-        float startX = -menuWidth;
+        Vector2 targetLocalPosition = new Vector2(menuRect.position.x, menuRect.position.y);
 
-        LeanTween.moveX(menuRect, 0f, slideDuration).setEase(LeanTweenType.easeOutQuad);
-        
-        yield return new WaitForSeconds(slideDuration);
-        
-        menuRect.anchoredPosition = new Vector2(0f, menuRect.anchoredPosition.y);
-    }
+        // Calculate the correct anchored position by adding the canvas size to the targetLocalPosition
+        Vector2 correctAnchoredPosition = targetPosition.position;
 
-    private IEnumerator SlideOutMenu(Canvas canvas)
-    {
-        RectTransform menuRect = canvas.GetComponent<RectTransform>();
-        float endX = -menuWidth;
-
-        LeanTween.moveX(menuRect, endX, slideDuration).setEase(LeanTweenType.easeInQuad);
+        LeanTween.move(menuRect, correctAnchoredPosition, slideDuration).setEase(LeanTweenType.easeInOutQuad);
 
         yield return new WaitForSeconds(slideDuration);
 
-        canvas.gameObject.SetActive(false);
-        menuRect.anchoredPosition = new Vector2(endX, menuRect.anchoredPosition.y);
+        // Reset the anchored position after the animation to avoid cumulative offsets
+        menuRect.anchoredPosition = correctAnchoredPosition;
     }
+    
 }
+
 
 

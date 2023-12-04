@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public static int money_available;
     public static string username_db;
     public static string personalization;
+    public static int choice_q1;
+    public static int choice_q2;
+    public static int choice_q3;
 }
 
 
