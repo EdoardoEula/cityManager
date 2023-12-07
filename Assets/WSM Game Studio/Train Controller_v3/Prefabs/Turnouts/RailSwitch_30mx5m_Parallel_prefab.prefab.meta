@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 32e3d0626be274146b9078ff6287c672
+timeCreated: 1546084616
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Prefabs/Turnouts/RailSwitch_30mx5m_Parallel_prefab.prefab
+  uploadId: 338236

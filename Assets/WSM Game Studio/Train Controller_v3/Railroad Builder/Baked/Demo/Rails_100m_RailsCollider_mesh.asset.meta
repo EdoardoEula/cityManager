@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: a0027912545b32a4b8eea4d13a91370f
+timeCreated: 1543071762
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Railroad Builder/Baked/Demo/Rails_100m_RailsCollider_mesh.asset
+  uploadId: 338236

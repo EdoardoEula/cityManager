@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 513c5a0ec6aa4d04ab043c67b6ec5bee
+timeCreated: 1569421643
+licenseType: Store
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Prefabs/Deprecated/READ ME.txt
+  uploadId: 338236

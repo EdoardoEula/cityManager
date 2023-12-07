@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 37bb4eeb2f01f7148a742b05f7f77a7d
+timeCreated: 1543069976
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Railroad Builder/Baked/Demo/ClosedLoop_GuideCollider_mesh.asset
+  uploadId: 338236

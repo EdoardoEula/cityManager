@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: afecd5c0ffcff62448d82997664189a3
+timeCreated: 1546292630
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Prefabs/PlatformWagon_Black_13_4_BlueContainer.prefab
+  uploadId: 338236

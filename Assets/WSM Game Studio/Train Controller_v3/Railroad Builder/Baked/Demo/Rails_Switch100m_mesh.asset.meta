@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: fd49e371998878c47b0179c0c30274c7
+timeCreated: 1543071950
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Railroad Builder/Baked/Demo/Rails_Switch100m_mesh.asset
+  uploadId: 338236

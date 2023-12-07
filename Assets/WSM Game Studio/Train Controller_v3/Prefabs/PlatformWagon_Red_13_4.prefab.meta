@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: b53f1b2f01d428543b818fa846d275a9
+timeCreated: 1546293426
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Prefabs/PlatformWagon_Red_13_4.prefab
+  uploadId: 338236

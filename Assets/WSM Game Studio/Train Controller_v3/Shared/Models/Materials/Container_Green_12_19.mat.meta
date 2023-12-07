@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 808702e73f4e350448a3d2552f6582e4
+timeCreated: 1523275229
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Materials/Container_Green_12_19.mat
+  uploadId: 338236

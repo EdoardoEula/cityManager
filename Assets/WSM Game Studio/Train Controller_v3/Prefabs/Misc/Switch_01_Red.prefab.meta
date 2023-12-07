@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 27d077d3d4ad07c45a633b8f549f203b
+timeCreated: 1547586335
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Prefabs/Misc/Switch_01_Red.prefab
+  uploadId: 338236

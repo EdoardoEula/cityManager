@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 2fd10cf24d843494fad583fc01526999
+timeCreated: 1568724834
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Locomotive_01/Materials/Locomotive_01_Blue.mat
+  uploadId: 338236

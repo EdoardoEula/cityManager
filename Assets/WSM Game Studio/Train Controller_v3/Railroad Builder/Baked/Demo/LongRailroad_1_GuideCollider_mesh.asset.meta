@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: ceb6880de8a03b34d93096278a4711b4
+timeCreated: 1572470826
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Railroad Builder/Baked/Demo/LongRailroad_1_GuideCollider_mesh.asset
+  uploadId: 338236

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3c9de84f37e58a34790c6487513059f1
+timeCreated: 1523315792
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116455
+  packageName: Train Controller (Railroad System) v3.3
+  packageVersion: 3.3
+  assetPath: Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Materials/13_4_Train.mat
+  uploadId: 338236
