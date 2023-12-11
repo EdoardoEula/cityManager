@@ -14,6 +14,7 @@ public class SignUpManager : MonoBehaviour
     public TMP_InputField passwordInput;
     public TMP_InputField nameInput;
     public TMP_InputField surnameInput;
+    public TMP_InputField ageInput;
     public TMP_Dropdown genderDropdown;
     public TMP_Dropdown educationDropdown;
     public TMP_Text signUpResult;
@@ -165,8 +166,10 @@ public class SignUpManager : MonoBehaviour
         // Get the values from the input fields
         string firstName = nameInput.text;
         string surname = surnameInput.text;
-        string gender = genderDropdown.options[genderDropdown.value].text;
-        string educationLevel = educationDropdown.options[educationDropdown.value].text;
+        int age = ConvertToInt(ageInput.text);
+        GameManager.age = age;
+        GameManager.gender = genderDropdown.options[genderDropdown.value].text;
+        GameManager.education = educationDropdown.options[educationDropdown.value].text;
 
         // Create a dictionary with default and additional values
         Dictionary<string, object> defaultUserData = new Dictionary<string, object>
@@ -176,8 +179,9 @@ public class SignUpManager : MonoBehaviour
             {"personalizationField", defaultPersonalizationField},
             {"name", firstName},
             {"surname", surname},
-            {"gender", gender},
-            {"educationalLevel", educationLevel}
+            {"age", GameManager.age},
+            {"gender", GameManager.gender},
+            {"educationalLevel", GameManager.education},
         };
 
         // Get a reference to the user node in the database

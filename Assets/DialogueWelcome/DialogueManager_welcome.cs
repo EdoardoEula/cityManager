@@ -3,10 +3,14 @@ using System.Collections;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
+
 using UnityEngine.UI;
+using Unity.Barracuda;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager_welcome : MonoBehaviour
 {
+    
     private Queue<string> sentences;
 
     public TextMeshProUGUI dialogueText;
@@ -14,13 +18,14 @@ public class DialogueManager_welcome : MonoBehaviour
     private bool skipEnabled = false;
     private bool shouldSkipSentence = false;
     private bool skipButtonClicked = false;
-    public Button continueButton; // Reference to your ContinueButton
+    public Button continueButton;
 
+    
     void Start()
     {
         sentences = new Queue<string>();
     }
-    
+
     public void StartDialogue(CSVReader_welcome.Dialogue dialogue)
     {
         Debug.Log("Starting conversation...");
@@ -111,6 +116,20 @@ public class DialogueManager_welcome : MonoBehaviour
 
     public void EndDialogue()
     {
+        string nextScene = "MainScene";
+        string currentScene = "CharacterChoice";
+        
+        if (SceneManager.GetSceneByName(currentScene).isLoaded)
+        {
+            Debug.Log(currentScene + " is loaded. Unloading...");
+            SceneManager.UnloadSceneAsync(currentScene);
+        }
+        else
+        {
+            Debug.Log(currentScene + " is not loaded.");
+        }
+        Debug.Log("Loading " + nextScene);
+        SceneManager.LoadScene(nextScene, LoadSceneMode.Single);
         
     }
 

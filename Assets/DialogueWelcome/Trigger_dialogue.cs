@@ -1,9 +1,5 @@
-using System;
 using System.Collections;
 using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UI;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,7 +12,7 @@ public class Trigger_dialogue : MonoBehaviour
     public Button btn_3;
 
     private CSVReader_welcome.DialogueList dialogueList;
-    private int currentSentenceIndex = 1;
+    private int currentSentenceIndex = 0;
     private bool isSkipButtonClickable = true;
 
     // Start is called before the first frame update
@@ -45,31 +41,19 @@ public class Trigger_dialogue : MonoBehaviour
         skipButton.onClick.AddListener(OnSkipButtonClick);
     }
 
-    void SetButtonAlpha(Button button, float alpha)
-    {
-        if (button != null)
-        {
-            Image buttonImage = button.GetComponent<Image>();
-            if (buttonImage != null)
-            {
-                buttonImage.color = new Color(buttonImage.color.r, buttonImage.color.g, buttonImage.color.b, alpha);
-            }
-        }
-    }
-
     void OnContinueButtonClick()
     {
         currentSentenceIndex++;
 
         if (CurrentDialogueExists())
         {
-            FindObjectOfType<DialogueManager>().SetShouldSkipSentence(false);
-            FindObjectOfType<DialogueManager>().ResetSkipButtonClicked();
+            FindObjectOfType<DialogueManager_welcome>().SetShouldSkipSentence(false);
+            FindObjectOfType<DialogueManager_welcome>().ResetSkipButtonClicked();
             TriggerDialogue();
         }
         else
         {
-            FindObjectOfType<DialogueManager>().EndDialogue();
+            FindObjectOfType<DialogueManager_welcome>().EndDialogue();
         }
     }
 
@@ -142,22 +126,22 @@ public class Trigger_dialogue : MonoBehaviour
 
     void QuestionButtons()
     {
-        Image buttonImage1 = btn_1.GetComponent<Image>();
-        Image buttonImage2 = btn_2.GetComponent<Image>();
-        Image buttonImage3 = btn_3.GetComponent<Image>();
         CSVReader_welcome.Dialogue currentDialogue = GetCurrentDialogue();
         Debug.Log(currentDialogue.label);
         if (currentDialogue.label == 1)
         {
-            Debug.Log("Label is 1. Showing buttons with fade effect.");
+            btn_1.interactable = true;
+            btn_2.interactable = true;
+            btn_3.interactable = true;
             btn_1.GameObject().SetActive(true);
             btn_2.GameObject().SetActive(true);
             btn_3.GameObject().SetActive(true);
+            continueButton.GameObject().SetActive(false);
+            skipButton.GameObject().SetActive(false);
             
         }
         else
         {
-            Debug.Log("Label is not 1. Hiding buttons.");
             btn_1.GameObject().SetActive(false);
             btn_2.GameObject().SetActive(false);
             btn_3.GameObject().SetActive(false);
@@ -170,6 +154,7 @@ public class Trigger_dialogue : MonoBehaviour
 
     void updateChoice(string currentQuestion, int btn_number)
     {
+        
         switch (currentQuestion)
         {
             case "4":
@@ -182,26 +167,18 @@ public class Trigger_dialogue : MonoBehaviour
                 GameManager.choice_q3 = btn_number;
                 return;
         }
+        
+        btn_1.interactable = false;
+        btn_2.interactable = false;
+        btn_3.interactable = false;
+        continueButton.GameObject().SetActive(true);
     }
     
-    void DisplayNextSentence()
-    {
-        // Check if there are more sentences for the current character, level, and sentence index
-        while (CurrentDialogueExists())
-        {
-            // Trigger the next dialogue
-            TriggerDialogue();
-            return;
-        }
-
-        // If there are no more sentences, end the dialogue
-        FindObjectOfType<DialogueManager_welcome>().EndDialogue();
-    }
 
     bool CurrentDialogueExists()
     {
         return dialogueList != null &&
-               currentSentenceIndex <= dialogueList.dialogue.Length;
+               currentSentenceIndex < dialogueList.dialogue.Length;
     }
 
     CSVReader_welcome.Dialogue GetCurrentDialogue()
