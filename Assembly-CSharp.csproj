@@ -599,8 +599,14 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="System.IO.Abstractions">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.Analytics">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections.LowLevel.ILSupport">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
@@ -610,6 +616,9 @@
      </Reference>
      <Reference Include="Firebase.App">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Interactive.Async">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
@@ -632,29 +641,20 @@
      <Reference Include="Google.Protobuf">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
      </Reference>
+     <Reference Include="Grpc.Core">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Mono.Cecil">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Abstractions.TestingHelpers">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.Platform">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Abstractions.TestingHelpers">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
-     </Reference>
-     <Reference Include="System.IO.Abstractions">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
-     </Reference>
-     <Reference Include="Grpc.Core">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
-     </Reference>
-     <Reference Include="System.Interactive.Async">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
-     </Reference>
-     <Reference Include="Mono.Cecil">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1055,11 +1055,11 @@
      <Reference Include="Unity.VisualScripting.Core.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Networking.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
@@ -1091,23 +1091,26 @@
      <Reference Include="Unity.Timeline">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Networking.Transport">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.ONNX">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ML-Agents">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
@@ -1135,9 +1138,6 @@
      </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Networking.Transport">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
