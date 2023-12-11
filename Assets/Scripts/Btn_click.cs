@@ -21,17 +21,17 @@ public class Btn_click : MonoBehaviour
     public TextMeshProUGUI firstmoneytext;
     public TextMeshProUGUI secondmoneytext;
     public TextMeshProUGUI thirdmoneytext;
-    public Image title;
+    public TextMeshProUGUI title;
     public string inputText_firstChoice;
     public string inputText_secondChoice;
     public string inputText_thirdChoice;
     public string inputText_firstMoney;
     public string inputText_secondMoney;
     public string inputText_thirdMoney;
+    public string inputText_title;
     public Sprite firstImageSprite;
     public Sprite secondImageSprite;
     public Sprite thirdImageSprite;
-    public Sprite titleSprite;
     public Image firstImage;
     public Image secondImage;
     public Image thirdImage;
@@ -57,6 +57,8 @@ public class Btn_click : MonoBehaviour
         {
             infoPanel.SetActive(false);
         }
+
+        title.text = inputText_title;
         firstchoicetext.text = inputText_firstChoice;
         secondchoicetext.text = inputText_secondChoice;
         thirdchoicetext.text = inputText_thirdChoice;
@@ -72,8 +74,6 @@ public class Btn_click : MonoBehaviour
         firstImage.sprite = firstImageSprite;
         secondImage.sprite = secondImageSprite;
         thirdImage.sprite = thirdImageSprite;
-        title.sprite = titleSprite;
-
     }
     void UpdateButtonState()
     {
