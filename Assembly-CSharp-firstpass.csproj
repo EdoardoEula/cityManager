@@ -358,14 +358,32 @@
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Google.Protobuf">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.Platform">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
-     <Reference Include="Google.Protobuf">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+     <Reference Include="System.IO.Abstractions.TestingHelpers">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+     </Reference>
+     <Reference Include="System.IO.Abstractions">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
+     </Reference>
+     <Reference Include="Grpc.Core">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="System.Interactive.Async">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections.LowLevel.ILSupport">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     </Reference>
+     <Reference Include="Mono.Cecil">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -751,20 +769,26 @@
      <Reference Include="Unity.Barracuda">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.ML-Agents.CommunicatorObjects">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Barracuda.iOSBLAS">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.VisualScripting.Core.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Networking.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
@@ -778,20 +802,26 @@
      <Reference Include="Unity.VisualScripting.Flow.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Netcode.Runtime">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Timeline.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.BurstBLAS">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
@@ -802,14 +832,14 @@
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.ONNX">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.ML-Agents">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
@@ -817,20 +847,35 @@
      <Reference Include="Unity.VisualScripting.State">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <Reference Include="Unity.ML-Agents.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Editor">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Networking.Transport">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Burst.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Barracuda.MacBLAS">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
@@ -838,11 +883,14 @@
      <Reference Include="Unity.VisualStudio.Editor">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Barracuda.MacBLAS">
-     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Components">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Components.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Netcode.Editor.PackageChecker">
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.PackageChecker.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
      <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
