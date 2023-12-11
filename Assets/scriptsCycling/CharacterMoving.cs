@@ -8,13 +8,15 @@ public class CharacterMoving : MonoBehaviour
 {
     public float increment;
     public float speed;
-    private int count=0;
+    private int count = 0;
     private Vector2 targetPos;
     public TextMeshProUGUI countText;
+    public float maxY = 5f; // Limite massimo sull'asse Y
+    public float minY = -5f; // Limite minimo sull'asse Y
 
     private void Awake()
     {
-        // No need to set targetPos here, it's automatically initialized to (0,0)
+        // Nessuna necessità di impostare targetPos qui, viene già inizializzata automaticamente a (0,0)
     }
 
     private void Update()
@@ -30,7 +32,10 @@ public class CharacterMoving : MonoBehaviour
             MoveUp();
         }
 
-        // Move towards the target position
+        // Limita la posizione sull'asse Y
+        targetPos.y = Mathf.Clamp(targetPos.y, minY, maxY);
+
+        // Muovi verso la posizione target
         transform.position = Vector2.MoveTowards(transform.position, targetPos, speed * Time.deltaTime);
     }
 
@@ -43,23 +48,19 @@ public class CharacterMoving : MonoBehaviour
     {
         targetPos -= new Vector2(0, increment);
     }
-    
-    void OnTriggerEnter2D(Collider2D other) 
+
+    void OnTriggerEnter2D(Collider2D other)
     {
-        // Check if the object the player collided with has the "PickUp" tag.
-        if (other.gameObject.CompareTag("Collectible")) 
+        if (other.gameObject.CompareTag("Collectible"))
         {
-            // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
         }
     }
+
     void SetCountText()
     {
-        // Update the count text with the current count.
-        countText.text = " " + count.ToString();
+        countText.text = "Money: " + count.ToString();
     }
 }
-
-  

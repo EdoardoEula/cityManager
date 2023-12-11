@@ -10,9 +10,9 @@ public class ScrollingMovement : MonoBehaviour
     {
         transform.Translate(Vector3.left*speed* Time.deltaTime);
 
-        if (transform.position.x <-25f)
+        if (transform.position.x <-28f)
         {
-            transform.position = new Vector2(30.06f, transform.position.y);
+            transform.position = new Vector2(33.06f, transform.position.y);
         }
     }
 }

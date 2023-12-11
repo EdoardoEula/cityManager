@@ -34,7 +34,7 @@ public class Timer : MonoBehaviour
         // Update the UI Text to display the current time
         if (timerText != null)
         {
-            timerText.text = " " + Mathf.CeilToInt(currentTime).ToString();
+            timerText.text = "Time: " + Mathf.CeilToInt(currentTime).ToString();
         }
     }
 }
