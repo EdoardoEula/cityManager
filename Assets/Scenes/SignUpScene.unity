@@ -940,7 +940,7 @@ MonoBehaviour:
     m_Options:
     - m_Text: Select your gender
       m_Image: {fileID: 0}
-    - m_Text: Prefer Not Say
+    - m_Text: Prefer not to say
       m_Image: {fileID: 0}
     - m_Text: Female
       m_Image: {fileID: 0}
