@@ -329,8 +329,20 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="Accord.Genetic">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Genetic.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
+     </Reference>
      <Reference Include="System.IO.Abstractions">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.MachineLearning">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.dll</HintPath>
+     </Reference>
+     <Reference Include="SharpDX">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Analytics">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
@@ -341,17 +353,68 @@
      <Reference Include="nunit.framework">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
+     <Reference Include="Accord.Math.Noncommercial">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Noncommercial.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Imaging.Noncommercial">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.Noncommercial.dll</HintPath>
+     </Reference>
      <Reference Include="ReportGeneratorMerged">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.MachineLearning.GPL">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.GPL.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Math 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math 1.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Controls.Vision 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision 1.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord 1.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Video">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
+     <Reference Include="Accord.Statistics 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics 1.dll</HintPath>
+     </Reference>
+     <Reference Include="ZedGraph">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ZedGraph.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Audio.DirectSound">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.DirectSound.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Audio">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Vision">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision.dll</HintPath>
+     </Reference>
      <Reference Include="System.Interactive.Async">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
      </Reference>
+     <Reference Include="Accord.Controls.Audio">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Audio.dll</HintPath>
+     </Reference>
+     <Reference Include="ICSharpCode.SharpZipLib">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ICSharpCode.SharpZipLib.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.TaskExtension">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Math.Core">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Controls">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Text">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Text.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Auth">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
@@ -365,11 +428,38 @@
      <Reference Include="Mono.Data.Sqlite">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
      </Reference>
+     <Reference Include="Accord.DataSets">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DataSets.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.IO">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.IO.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Imaging 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 1.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Neuro">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Neuro.dll</HintPath>
+     </Reference>
+     <Reference Include="SharpDX.DirectSound">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.DirectSound.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Google.Protobuf">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Controls.Imaging">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.DebuggerVisualizers.GPL">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DebuggerVisualizers.GPL.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Video.DirectShow">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.DirectShow.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Video.VFW">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.VFW.dll</HintPath>
      </Reference>
      <Reference Include="Grpc.Core">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
@@ -383,152 +473,62 @@
      <Reference Include="Firebase.Platform">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
-     <Reference Include="Google.MiniJson">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Video.VFW">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.VFW.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Genetic">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Genetic.dll</HintPath>
-     </Reference>
-     <Reference Include="ICSharpCode.SharpZipLib">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ICSharpCode.SharpZipLib.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Math 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Controls.Imaging 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging 1.dll</HintPath>
-     </Reference>
      <Reference Include="Accord.Video.Ximea">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.Ximea.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Imaging 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Video">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Audition">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audition.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.IO">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.IO.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.MachineLearning 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Statistics">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Controls.Vision">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.DebuggerVisualizers.GPL">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DebuggerVisualizers.GPL.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Controls 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls 1.dll</HintPath>
-     </Reference>
-     <Reference Include="ZedGraph">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ZedGraph.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.DataSets">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DataSets.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Vision 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Math.Noncommercial">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Noncommercial.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Neuro">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Neuro.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Audio.DirectSound">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.DirectSound.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Math.Core 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Imaging.Noncommercial">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.Noncommercial.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Audio">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.MachineLearning.GPL">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.GPL.dll</HintPath>
-     </Reference>
-     <Reference Include="SharpDX.DirectSound">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.DirectSound.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord 1.dll</HintPath>
-     </Reference>
-     <Reference Include="SharpDX">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Fuzzy">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Fuzzy.dll</HintPath>
      </Reference>
+     <Reference Include="Google.MiniJson">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Audition">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audition.dll</HintPath>
+     </Reference>
      <Reference Include="Accord.Video.Kinect">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.Kinect.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Controls.Audio">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Audio.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Text">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Text.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Video.DirectShow">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.DirectShow.dll</HintPath>
+     <Reference Include="Accord.MachineLearning 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Controls.Imaging">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging.dll</HintPath>
+     <Reference Include="Accord.Controls.Vision">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Imaging 2">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 2.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Imaging">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.dll</HintPath>
+     <Reference Include="Accord">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video 1">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video 1.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.MachineLearning">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.dll</HintPath>
+     <Reference Include="Accord.Statistics">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Statistics 2">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics 2.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Statistics 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Controls.Vision 1">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision 1.dll</HintPath>
-     </Reference>
-     <Reference Include="Accord.Controls">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.dll</HintPath>
-     </Reference>
      <Reference Include="ZedGraph 1">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ZedGraph 1.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Vision">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision.dll</HintPath>
+     <Reference Include="Accord.Vision 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision 1.dll</HintPath>
      </Reference>
-     <Reference Include="Accord.Math.Core">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core.dll</HintPath>
+     <Reference Include="Accord.Math.Core 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core 1.dll</HintPath>
      </Reference>
-     <Reference Include="Accord">
-     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.dll</HintPath>
+     <Reference Include="Accord.Controls 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls 1.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Imaging">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Imaging 2">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 2.dll</HintPath>
+     </Reference>
+     <Reference Include="Accord.Controls.Imaging 1">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging 1.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

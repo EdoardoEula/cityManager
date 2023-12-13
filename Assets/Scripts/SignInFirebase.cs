@@ -84,7 +84,7 @@ public class SignInFirebase : MonoBehaviour
         
         yield return new WaitUntil(() => GameManager.personalization != null);
 
-        if (GameManager.personalization == "0")
+        if (GameManager.personalization == 0)
         {
             SwitchScene("GameStart", "CharacterChoice");
         }
@@ -130,7 +130,7 @@ public class SignInFirebase : MonoBehaviour
                     // Access individual values
                     GameManager.money_available = ConvertToInt(userDataDict["moneyAvailable"]);
                     GameManager.level_co2 = ConvertToInt(userDataDict["levelCO2"]);
-                    GameManager.personalization = ConvertToString(userDataDict["personalizationField"]);
+                    GameManager.personalization = ConvertToInt(userDataDict["personalizationField"]);
 
                     // Now you can use these values as needed
                     Debug.LogFormat("User Data - Money Available: {0}, LevelCO2: {1}, Personalization Field: {2}",

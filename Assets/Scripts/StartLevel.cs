@@ -1,6 +1,6 @@
-using System.IO;
-using Accord.IO;
 using UnityEngine;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using TMPro;
 using Accord.MachineLearning.DecisionTrees;
 
@@ -10,18 +10,14 @@ public class StartLevel : MonoBehaviour
 
     void Start()
     {
-        int age = GameManager.age;
-        int eduLev = MapEducationLevel(GameManager.education);
-        int q1 = GameManager.choice_q1;
-        int q2 = GameManager.choice_q2;
-        int q3 = GameManager.choice_q3;
-        int genderMale = (GameManager.gender == "Male") ? 1 : 0;
-        int genderFemale = (GameManager.gender == "Female") ? 1 : 0;
-        int genderNonbinary = (GameManager.gender == "Non-binary") ? 1 : 0;
-        int genderPreferNotToSay = (GameManager.gender == "Prefer not to say") ? 1 : 0;
+        //int age = GameManager.age;
+        //int eduLev = MapEducationLevel(GameManager.education);
+        //int q1 = GameManager.choice_q1;
+        //int q2 = GameManager.choice_q2;
+        //int q3 = GameManager.choice_q3;
 
-        // Set the text of the moneyText component
-        if (moneyText != null)
+    // Set the text of the moneyText component
+    if (moneyText != null)
         {
             moneyText.text = $"{GameManager.money_available}";
         }
@@ -33,13 +29,16 @@ public class StartLevel : MonoBehaviour
         // Load the trained model
         RandomForest model;
 
-        using (FileStream fs = File.OpenRead("Assets/random_forest_model.joblib"))
+        byte[] data = File.ReadAllBytes("Assets/random_forest_model.joblib");
+        using (MemoryStream ms = new MemoryStream(data))
         {
-            model = Serializer.Load<RandomForest>(fs);
+            BinaryFormatter formatter = new BinaryFormatter();
+            model = (RandomForest)formatter.Deserialize(ms);
         }
 
         // Example input for prediction
-        double[] newInput = {age, eduLev, q1, q2, q3, genderFemale, genderMale, genderNonbinary, genderPreferNotToSay};
+        double[] newInput = { 24, 5, 2, 1, 3 };
+        //double[] newInput = { age, eduLev, q1, q2, q3};
 
         // Make predictions
         int prediction = model.Decide(newInput);
@@ -52,17 +51,17 @@ public class StartLevel : MonoBehaviour
     {
         switch (educationLevel.ToLower())
         {
-            case "Elementary School":
+            case "elementary school":
                 return 5;
-            case "Middle School":
+            case "middle school":
                 return 8;
-            case "High School":
+            case "high school":
                 return 13;
-            case "Bachelor's Degree":
+            case "bachelor's degree":
                 return 18;
-            case "Master's Degree":
+            case "master's degree":
                 return 22;
-            case "Doctoral Degree":
+            case "doctoral degree":
                 return 25;
             default:
                 return -1;
