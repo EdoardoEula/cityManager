@@ -83,7 +83,8 @@ public class SignInFirebase : MonoBehaviour
         RetrieveUserData(userId);
         
         yield return new WaitUntil(() => GameManager.personalization != null);
-
+        
+        Debug.Log("GameManager.personalization: " + GameManager.personalization);
         if (GameManager.personalization == 0)
         {
             SwitchScene("GameStart", "CharacterChoice");

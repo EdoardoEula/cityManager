@@ -10,7 +10,7 @@ public class CharacterInteractionindustry : MonoBehaviour
     public GameObject iconArrowindustry;
     public GameObject canvasIndustry;
     private CSVReader.DialogueList dialogueList;
-    private int character = 1;  // Set the default character value to change with GameManager.personalization
+    private int? character = GameManager.personalization;  // Set the default character value to change with GameManager.personalization
     private string currentCharacter;
     private string currentLevel = "Industries";
     private int currentSentenceIndex;
