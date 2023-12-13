@@ -2,6 +2,11 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
+public interface IDialogueManager
+{
+    bool HasDialogueEnded();
+}
+
 public class ChangeCamera : MonoBehaviour
 {
     public Camera mainCamera;
@@ -11,7 +16,13 @@ public class ChangeCamera : MonoBehaviour
     public Canvas canvasToFadeIn;
     public float fadeDuration = 1.5f;
     public float movementDuration = 2f;
-    public float fadeInDelay = 1f; // Add a delay before fade-in
+    public float fadeInDelay = 1f;
+    [SerializeField] private Button[] buttons; // Array of buttons to handle
+    [SerializeField] private GameObject dialogueManagerObject;
+    private IDialogueManager dialogueManager; // Reference to the interface
+
+    public Button farmLandButton;
+    private int farmLandClickCount = 0;
 
     void Start()
     {
@@ -44,16 +55,53 @@ public class ChangeCamera : MonoBehaviour
         {
             Debug.LogWarning("Transition Button not assigned in the Unity Editor.");
         }
+
+        // Check if the FarmLand Button is assigned
+        if (farmLandButton != null)
+        {
+            farmLandButton.onClick.AddListener(OnFarmLandButtonClick);
+        }
+        else
+        {
+            Debug.LogWarning("FarmLand Button not assigned in the Unity Editor.");
+        }
+
+        // Assign the dialogue manager if it's not assigned in the editor
+        if (dialogueManagerObject != null)
+        {
+            dialogueManager = dialogueManagerObject.GetComponent<IDialogueManager>();
+        }
+    }
+
+
+    private void OnFarmLandButtonClick()
+    {
+        farmLandClickCount++;
+
+        if (farmLandClickCount > 1)
+        {
+            SetButtonsInteractability(true);
+        }
+        else
+        {
+            SetButtonsInteractability(false);
+        }
+    }
+
+    private void SetButtonsInteractability(bool interactable)
+    {
+        foreach (Button button in buttons)
+        {
+            if (button != null)
+            {
+                button.interactable = interactable;
+            }
+        }
     }
 
     private void TransitionFadeOutCanvas(Canvas canvas)
     {
         StartCoroutine(FadeOutCanvas(canvas));
-    }
-
-    private void TransitionToMoveToCamera()
-    {
-        StartCoroutine(MoveToTransformCoroutine(moveTo, movementDuration));
     }
 
     private IEnumerator FadeOutCanvas(Canvas canvas)
@@ -110,6 +158,29 @@ public class ChangeCamera : MonoBehaviour
         canvasGroup.alpha = 1f; // Ensure the final alpha is 1
         canvasGroup.interactable = true; // Enable interactions when visible
         canvasGroup.blocksRaycasts = true; // Enable raycasts when visible
+
+        // Check if the dialogue has ended before making buttons interactable
+        if (dialogueManager != null)
+        {
+            bool dialogueEnded = dialogueManager.HasDialogueEnded();
+            Debug.Log($"Dialogue Ended: {dialogueEnded}");
+
+            // Increment the FarmLand button click count
+            if (farmLandButton != null && dialogueEnded)
+            {
+                farmLandClickCount++;
+            }
+
+            // Make specific buttons non-interactable based on FarmLand button click count
+            if (farmLandClickCount < 2)
+            {
+                SetButtonsInteractability(false);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("DialogueManager is null.");
+        }
     }
 
     private IEnumerator MoveToTransformCoroutine(Transform targetTransform, float duration)
@@ -130,5 +201,16 @@ public class ChangeCamera : MonoBehaviour
 
         mainCamera.transform.position = targetTransform.position; // Ensure the final position is exact
         mainCamera.transform.rotation = targetTransform.rotation; // Ensure the final rotation is exact
+    }
+
+    private void TransitionToMoveToCamera()
+    {
+        StartCoroutine(MoveToTransformCoroutine(moveTo, movementDuration));
+
+        // Check if the dialogue has ended before resetting button interactability
+        if (dialogueManager != null && dialogueManager.HasDialogueEnded())
+        {
+            SetButtonsInteractability(true);
+        }
     }
 }

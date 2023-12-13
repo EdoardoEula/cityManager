@@ -1,11 +1,10 @@
-// Updated DialogueManager script
 using System.Collections;
 using UnityEngine;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.UI;
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour,IDialogueManager
 {
     public TextMeshProUGUI nameText;
     private Queue<string> sentences;
@@ -17,10 +16,18 @@ public class DialogueManager : MonoBehaviour
     private bool shouldSkipSentence = false;
     private bool skipButtonClicked = false;
     public Button continueButton; // Reference to your ContinueButton
+    [SerializeField]
+    public Button[] buttons;
+    
+    private bool dialogueEnded = false;
+
+    // Reference to your LevelFrameCanvas
+    public Canvas levelFrameCanvas;
 
     void Start()
     {
         sentences = new Queue<string>();
+        DisableButtons(); // Call this to disable buttons initially
     }
 
     public void StartDialogue(CSVReader.Dialogue dialogue)
@@ -53,9 +60,6 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.LogError("dialogueText is null. Make sure it's assigned in the Inspector.");
         }
-
-        // Disable the ContinueButton initially
-        continueButton.interactable = skipButtonClicked;
     }
 
     IEnumerator TypeOrSkipSentence(string sentence)
@@ -95,7 +99,6 @@ public class DialogueManager : MonoBehaviour
         // Enable the ContinueButton
         continueButton.interactable = true;
     }
-    
 
     public void SetShouldSkipSentence(bool value)
     {
@@ -110,6 +113,40 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("isOpen", false);
+        EnableButtons(); // Call this to enable buttons when the dialogue ends
+        bool dialogueEnded = HasDialogueEnded();
+
+        // Do something with the result, if needed
+        if (dialogueEnded)
+        {
+            // Dialogue has ended, perform additional actions if needed
+            Debug.Log("Dialogue has ended!");
+        }
+    }
+    public bool HasDialogueEnded()
+    {
+        // Check if the dialogue has started
+        bool dialogueStarted = sentences.Count > 0; // Assuming sentences is the queue storing the dialogue sentences
+
+        // Check if the dialogue has ended
+        bool dialogueEnded = dialogueStarted && sentences.Count == 0;
+
+        return dialogueEnded;
+    }
+    void DisableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = false;
+        }
+    }
+
+    void EnableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = true;
+        }
     }
 
     public void ToggleSkipEnabled()
@@ -120,5 +157,5 @@ public class DialogueManager : MonoBehaviour
         // Enable the ContinueButton if the skip button is clicked
         continueButton.interactable = skipButtonClicked;
     }
-
+    
 }
