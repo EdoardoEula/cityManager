@@ -210,7 +210,94 @@ public class SignUpManager : MonoBehaviour
                 Debug.Log("Default values saved successfully");
             }
         });
+        
+        string defaultChoice = "No";
+
+        Dictionary<string, object> defaultUserChoicesData = new Dictionary<string, object>
+        {
+            { "Lab-grown meat", defaultChoice },
+            { "Open-land farming", defaultChoice },
+            { "Intensive breeding", defaultChoice },
+            { "Water collection", defaultChoice },
+            { "Intensive greenhouse", defaultChoice },
+            { "Renewable energy", defaultChoice },
+            { "Deforestation", defaultChoice },
+            { "Organic Farming", defaultChoice },
+            { "Crop rotation", defaultChoice },
+            { "Fossil fuel use", defaultChoice },
+            { "Wastewater", defaultChoice },
+            { "Renewable sources", defaultChoice },
+            { "Recycling programs", defaultChoice },
+            { "Waste incineration", defaultChoice },
+            { "Advanced technologies", defaultChoice },
+            { "Efficient vehicles", defaultChoice },
+            { "Sustainable transports", defaultChoice },
+            { "Fossil fuel", defaultChoice },
+            { "Tree planting", defaultChoice },
+            { "Gas Emissions", defaultChoice },
+            { "Public transports", defaultChoice },
+            { "Lightening systems", defaultChoice },
+            { "Heating systems", defaultChoice },
+            { "Fossil fuels use", defaultChoice },
+            { "Biking", defaultChoice },
+            { "Minimize Gas emissions", defaultChoice },
+            { "Fossil fuel dependency", defaultChoice },
+            { "Park", defaultChoice },
+            { "Plants", defaultChoice },
+            { "Parking1", defaultChoice },
+            { "Bins", defaultChoice },
+            { "Drinking water", defaultChoice },
+            { "Resource Depletion", defaultChoice },
+            { "Workshops", defaultChoice },
+            { "Financial incentives", defaultChoice },
+            { "Work-related travel", defaultChoice },
+            { "Charging stations", defaultChoice },
+            { "Planting trees", defaultChoice },
+            { "Incentives for gasoline", defaultChoice },
+            { "Limiting water", defaultChoice },
+            { "Fossil Fuel-Based Energy", defaultChoice },
+            { "Parks", defaultChoice },
+            { "Cycling paths", defaultChoice },
+            { "Parking2", defaultChoice },
+            { "First necessities", defaultChoice },
+            { "Malls", defaultChoice },
+            { "Pedestrian Area", defaultChoice },
+            { "Incineration", defaultChoice },
+            { "Garbages", defaultChoice },
+            { "E-waste", defaultChoice },
+            { "Metro", defaultChoice },
+            { "Paved Surfaces", defaultChoice },
+            { "Electric Vehicles", defaultChoice },
+        };
+
+// Get a reference to the user_choices node in the database
+        DatabaseReference userChoicesReference = reference.Child("user_choice").Child(userId);
+
+// Run a transaction to check and set the default values for user_choices
+        userChoicesReference.RunTransaction(mutableData =>
+            {
+                if (mutableData.Value == null)
+                {
+                    mutableData.Value = defaultUserChoicesData;
+                    return TransactionResult.Success(mutableData);
+                }
+
+                // If the data already exists, do nothing
+                return TransactionResult.Abort();
+            })
+            .ContinueWithOnMainThread(transactionTask =>
+            {
+                if (transactionTask.IsFaulted)
+                {
+                    Debug.LogError("Failed to save default user choices: " + transactionTask.Exception);
+                }
+                else if (transactionTask.IsCompleted)
+                {
+                    Debug.Log("Default user choices saved successfully");
+                }
+            });
     }
+    
 
     public void SwitchScene(string startscene, string nextscene)
     {

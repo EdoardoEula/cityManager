@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +18,7 @@ public class CharacterInteractionindustry : MonoBehaviour
     public Button continueButton;
     public Button skipButton;
     public bool isStopped = false; // Add this line to declare the isStopping variable
+    public Button farmLandButton;  // Add a reference to your FarmLand button
 
     void Start()
     {
@@ -41,7 +41,13 @@ public class CharacterInteractionindustry : MonoBehaviour
         }
 
         isStopped = true;
+        farmLandButton.onClick.AddListener(OnFarmLandButtonClick);  // Add this line to listen for the FarmLand button click
+        continueButton.onClick.AddListener(OnContinueButtonClick);
+        skipButton.onClick.AddListener(OnSkipButtonClick);
+    }
 
+    void OnFarmLandButtonClick()
+    {
         switch (character)
         {
             case 1:
@@ -49,24 +55,22 @@ public class CharacterInteractionindustry : MonoBehaviour
                 currentCharacter = "Entrepreneur";
                 break;
             case 2:
-                currentSentenceIndex = 18;  // Modify this line based on the starting index for the Environmentalist
+                currentSentenceIndex = 18; // Modify this line based on the starting index for the Environmentalist
                 currentCharacter = "Environmentalist";
                 break;
             case 3:
-                currentSentenceIndex = 22;  // Modify this line based on the starting index for the Equilibrist
+                currentSentenceIndex = 22; // Modify this line based on the starting index for the Equilibrist
                 currentCharacter = "Equilibrist";
                 break;
             default:
                 // Handle the default case or return if needed
                 return;
         }
-        
-        Debug.Log($"Character: {character}, Current Character: {currentCharacter}, Index: {currentSentenceIndex}");
 
-        continueButton.onClick.AddListener(OnContinueButtonClick);
-        skipButton.onClick.AddListener(OnSkipButtonClick);
+        Debug.Log($"Character: {character}, Current Character: {currentCharacter}, Index: {currentSentenceIndex}");
     }
- void OnContinueButtonClick()
+
+    void OnContinueButtonClick()
     {
         currentSentenceIndex++;
 

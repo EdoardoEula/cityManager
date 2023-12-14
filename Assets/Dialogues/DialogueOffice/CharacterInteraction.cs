@@ -9,7 +9,7 @@ public class CharacterInteraction : MonoBehaviour
     public GameObject iconArrowuffici;
     public GameObject canvasOffice;
     private CSVReader.DialogueList dialogueList;
-    private int character = 2;  // Set the default character value to change with GameManager.personalization
+    private int? character = GameManager.personalization;  // Set the default character value to change with GameManager.personalization
     private string currentCharacter;
     private string currentLevel = "Offices";
     private int currentSentenceIndex;
@@ -18,6 +18,7 @@ public class CharacterInteraction : MonoBehaviour
     public Button continueButton;
     public Button skipButton;
     public bool isStopped = false; // Add this line to declare the isStopping variable
+    public Button farmLandButton;  // Add a reference to your FarmLand button
 
     void Start()
     {
@@ -40,29 +41,11 @@ public class CharacterInteraction : MonoBehaviour
 
         isStopped = true;
 
-        switch (character)
-        {
-            case 1:
-                currentSentenceIndex = 26;
-                currentCharacter = "Entrepreneur";
-                break;
-            case 2:
-                currentSentenceIndex = 30;  // Modify this line based on the starting index for the Environmentalist
-                currentCharacter = "Environmentalist";
-                break;
-            case 3:
-                currentSentenceIndex = 34;  // Modify this line based on the starting index for the Equilibrist
-                currentCharacter = "Equilibrist";
-                break;
-            default:
-                // Handle the default case or return if needed
-                return;
-        }
         
-        Debug.Log($"Character: {character}, Current Character: {currentCharacter}, Index: {currentSentenceIndex}");
-
         continueButton.onClick.AddListener(OnContinueButtonClick);
         skipButton.onClick.AddListener(OnSkipButtonClick);
+        farmLandButton.onClick.AddListener(OnFarmLandButtonClick);  // Add this line to listen for the FarmLand button click
+
     }
     void OnContinueButtonClick()
     {
@@ -80,7 +63,33 @@ public class CharacterInteraction : MonoBehaviour
         }
     }
 
-void OnSkipButtonClick()
+    void OnFarmLandButtonClick()
+    {
+
+
+        switch (character)
+        {
+            case 1:
+                currentSentenceIndex = 26;
+                currentCharacter = "Entrepreneur";
+                break;
+            case 2:
+                currentSentenceIndex = 30; // Modify this line based on the starting index for the Environmentalist
+                currentCharacter = "Environmentalist";
+                break;
+            case 3:
+                currentSentenceIndex = 34; // Modify this line based on the starting index for the Equilibrist
+                currentCharacter = "Equilibrist";
+                break;
+            default:
+                // Handle the default case or return if needed
+                return;
+        }
+
+        Debug.Log($"Character: {character}, Current Character: {currentCharacter}, Index: {currentSentenceIndex}");
+    }
+
+    void OnSkipButtonClick()
     {
         if (isSkipButtonClickable)
         {
