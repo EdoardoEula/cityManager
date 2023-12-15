@@ -64,6 +64,7 @@
      <Compile Include="Assets/scriptsCycling/spawner.cs" />
      <Compile Include="Assets/Dialogues/DialogueIndustry/characterMovementindustry.cs" />
      <Compile Include="Assets/Scripts/CO2BarController.cs" />
+     <Compile Include="Assets/Scripts/FirebaseInit.cs" />
      <Compile Include="Assets/DialogueWelcome/DialogueManager_welcome.cs" />
      <Compile Include="Assets/Scripts/Choice_click.cs" />
      <Compile Include="Assets/Dialogues/DialogueOffice/CharacterMovement.cs" />

@@ -16,16 +16,7 @@ public class SignInFirebase : MonoBehaviour
     public TMP_InputField passwordInput;
     public Button signInButton;
     public TMP_Text textPwd;
-    DatabaseReference reference; // Declare DatabaseReference
-
-    private void Awake()
-    {
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task =>
-        {
-            FirebaseApp app = FirebaseApp.DefaultInstance;
-            reference = FirebaseDatabase.DefaultInstance.RootReference;
-        });
-    }
+    DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
 
     private void Start()
     {

@@ -22,12 +22,6 @@ public class Info_click : MonoBehaviour
     void Start()
     {
         myButton.onClick.AddListener(ToggleVisibility);
-
-        // Initialize Firebase
-        FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
-            FirebaseApp app = FirebaseApp.DefaultInstance;
-            databaseReference = FirebaseDatabase.DefaultInstance.RootReference;
-        });
     }
 
     void ToggleVisibility()
@@ -56,7 +50,7 @@ public class Info_click : MonoBehaviour
     void QueryDatabase(string selectedChoice)
     {
         // Reference to the "infos" node in the database
-        DatabaseReference infosRef = databaseReference.Child("infos");
+        DatabaseReference infosRef = FirebaseDatabase.DefaultInstance.RootReference.Child("infos");
 
         infosRef.OrderByChild("Choice").EqualTo(selectedChoice).GetValueAsync().ContinueWithOnMainThread(task => {
             if (task.IsFaulted)
