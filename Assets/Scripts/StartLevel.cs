@@ -1,8 +1,6 @@
 using System.Collections.Generic;
-using Accord;
 using UnityEngine;
 using TMPro;
-using Unity.Netcode;
 using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
@@ -10,11 +8,11 @@ using Firebase.Extensions;
 public class StartLevel : MonoBehaviour
 {
     public TMP_Text moneyText;
-    public GameObject World; 
+    public GameObject World;
+    public GameObject UI;
 
     void Start()
     {
-        
         if (moneyText != null)
         {
             moneyText.text = $"{GameManager.money_available}";
@@ -23,9 +21,10 @@ public class StartLevel : MonoBehaviour
         {
             Debug.Log("Money text component not assigned.");
         }
+
         ProcessUserChoices();
     }
-    
+
     private void ProcessUserChoices()
     {
         // Retrieve currentUser public variable from the script GameManager
@@ -45,10 +44,10 @@ public class StartLevel : MonoBehaviour
                     // Handle error
                     Debug.LogError("Error retrieving user choices from Firebase: " + task.Exception);
                 }
-                
+
                 DataSnapshot userChoicesSnapshot = task.Result;
                 Debug.Log(userChoicesSnapshot);
-                
+
                 // Iterate through the children of the 'user_choices' node
                 foreach (DataSnapshot choiceSnapshot in userChoicesSnapshot.Children)
                 {
@@ -56,43 +55,20 @@ public class StartLevel : MonoBehaviour
                     string choiceValue = choiceSnapshot.Value.ToString();
                     Debug.Log($"{choiceName}: {choiceValue}");
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
-                    //Find the corresponding GameObject in the 'World';
+                    // Find the corresponding GameObject in the 'World';
                     Transform choiceObject = World.transform.Find(choiceName);
 
                     if (choiceObject != null)
                     {
-                       Debug.Log("Game Object not null");
-                       Debug.Log(choiceObject.childCount);
-                       //Iterate through the grandchildren of the choiceObject
-
-                       choiceObject.GetChild(0).gameObject.SetActive(choiceValue == "No");
-                       choiceObject.GetChild(1).gameObject.SetActive(choiceValue == "Yes");
-                    }
-<<<<<<< HEAD
-=======
-                    // Find the corresponding GameObject in the 'World'
-                    //Transform choiceObject = World.transform.Find(choiceName);
-                    //Debug.Log(choiceObject);
-
-                    //if (choiceObject != null)
-                    //{
-                       // Debug.Log("Game Object not null");
-                       // Debug.Log(choiceObject.childCount);
+                        Debug.Log("Game Object not null");
+                        Debug.Log(choiceObject.childCount);
                         // Iterate through the grandchildren of the choiceObject
 
-                        //choiceObject.GetChild(0).gameObject.SetActive(choiceValue == "NO");
-                        //choiceObject.GetChild(1).gameObject.SetActive(choiceValue == "YES");
-                    //}
->>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
-=======
->>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
+                        choiceObject.GetChild(0).gameObject.SetActive(choiceValue == "No");
+                        choiceObject.GetChild(1).gameObject.SetActive(choiceValue == "Yes");
+                    }
                 }
             });
         }
     }
 }
-

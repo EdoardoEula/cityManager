@@ -1,6 +1,12 @@
 using System.Collections;
+using System;
 using UnityEngine;
+using TMPro;
+using System.Collections.Generic;
 using UnityEngine.UI;
+using Firebase;
+using Firebase.Database;
+using Firebase.Extensions;
 
 public interface IDialogueManager
 {
@@ -72,6 +78,13 @@ public class ChangeCamera : MonoBehaviour
             dialogueManager = dialogueManagerObject.GetComponent<IDialogueManager>();
         }
     }
+    void DisableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = false;
+        }
+    }
 
 
     private void OnFarmLandButtonClick()
@@ -80,23 +93,76 @@ public class ChangeCamera : MonoBehaviour
 
         if (farmLandClickCount > 1)
         {
-            SetButtonsInteractability(true);
+            EnableButtons();
         }
         else
         {
-            SetButtonsInteractability(false);
+            DisableButtons();
         }
     }
 
-    private void SetButtonsInteractability(bool interactable)
+    
+    void EnableButtons()
     {
-        foreach (Button button in buttons)
+        // Retrieve currentUser public variable from the script GameManager
+        string currentUser = GameManager.currentUser;
+
+        if (string.IsNullOrEmpty(currentUser))
         {
-            if (button != null)
-            {
-                button.interactable = interactable;
-            }
+            Debug.LogError("Current user is null or empty.");
+            return;
         }
+
+        DatabaseReference buttonsRef = FirebaseDatabase.DefaultInstance.RootReference.Child("buttons").Child(currentUser);
+
+        buttonsRef.GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Error retrieving buttons data from Firebase: " + task.Exception);
+                return;
+            }
+
+            DataSnapshot buttonsSnapshot = task.Result;
+
+            foreach (Button button in buttons)
+            {
+                string buttonName = button.name;
+                Debug.Log(buttonName);
+
+                buttonName = buttonName.Replace("_btn", "");
+                Debug.Log(buttonName + "without btn");
+
+
+                // Check if the button name exists in the Firebase data
+                if (buttonsSnapshot.HasChild(buttonName))
+                {
+                    string buttonValue = buttonsSnapshot.Child(buttonName).Value.ToString();
+                    Debug.Log($"{buttonName}: {buttonValue}");
+
+                    // Append '_btn' to the button name
+                    string buttonObjectName = buttonValue + "_btn";
+                    
+                    if (buttonObjectName != null)
+                    {
+                        Debug.Log("Button Object found");
+                        
+                        // Set button interactable based on the value from Firebase
+                        bool isInteractable = buttonValue.Equals("On", StringComparison.OrdinalIgnoreCase);
+                        button.interactable = isInteractable;
+                    }
+                    else
+                    {
+                        Debug.Log("Button Object not found");
+                    }
+                }
+                else
+                {
+                    // Handle the case where the button name is not found in Firebase data
+                    Debug.LogWarning($"Button {buttonName} not found in Firebase data.");
+                }
+            }
+        });
     }
 
     private void TransitionFadeOutCanvas(Canvas canvas)
@@ -174,7 +240,7 @@ public class ChangeCamera : MonoBehaviour
             // Make specific buttons non-interactable based on FarmLand button click count
             if (farmLandClickCount < 2)
             {
-                SetButtonsInteractability(false);
+                DisableButtons();
             }
         }
         else
@@ -210,7 +276,7 @@ public class ChangeCamera : MonoBehaviour
         // Check if the dialogue has ended before resetting button interactability
         if (dialogueManager != null && dialogueManager.HasDialogueEnded())
         {
-            SetButtonsInteractability(true);
+            EnableButtons();
         }
     }
 }

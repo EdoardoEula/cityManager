@@ -296,6 +296,55 @@ public class SignUpManager : MonoBehaviour
                     Debug.Log("Default user choices saved successfully");
                 }
             });
+        
+        string defaultsituation = "On";
+        
+        // Create a dictionary with default and additional values
+        Dictionary<string, object> defaultUserButtons = new Dictionary<string, object>
+        {
+            {"BREEDING", defaultsituation},
+            {"CULTIVATION", defaultsituation},
+            {"GREENHOUSE", defaultsituation},
+            {"AIR QUALITY", defaultsituation},
+            {"TRANSPORTATION", defaultsituation},
+            {"FACTOR EFFICIENCY", defaultsituation},
+            {"WASTE DISPOSAL", defaultsituation},
+            {"GREEN AREAS", defaultsituation},
+            {"PUBLIC TRANSPORT", defaultsituation},
+            {"EMISSIONS", defaultsituation},
+            {"SHOPS", defaultsituation},
+            {"HOUSES", defaultsituation},
+            {"WASTE", defaultsituation},
+            {"TRANSPORTS", defaultsituation},
+            {"CYCLING", defaultsituation},
+        };
+
+        // Get a reference to the user node in the database
+        DatabaseReference userbuttonReference = reference.Child("buttons").Child(userId);
+
+        // Run a transaction to check and set the default values
+        userbuttonReference.RunTransaction(mutableData =>
+            {
+                if (mutableData.Value == null)
+                {
+                    mutableData.Value = defaultUserButtons;
+                    return TransactionResult.Success(mutableData);
+                }
+
+                // If the data already exists, do nothing
+                return TransactionResult.Abort();
+            })
+            .ContinueWithOnMainThread(transactionTask =>
+            {
+                if (transactionTask.IsFaulted)
+                {
+                    Debug.LogError("Failed to save default values: " + transactionTask.Exception);
+                }
+                else if (transactionTask.IsCompleted)
+                {
+                    Debug.Log("Default values saved successfully");
+                }
+            });
 
     }
     
