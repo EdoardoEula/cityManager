@@ -101,6 +101,7 @@
      <Folder Include="Assets/UI" />
      <Folder Include="Assets/TextMesh Pro/Sprites" />
      <Folder Include="Assets/PolygonOffice/Prefabs/Props/Misc" />
+     <Folder Include="Assets/Python/Lib/joblib" />
      <Folder Include="Assets/PolygonOffice/Models/Materials" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Prefabs/Sinalization" />
@@ -121,6 +122,7 @@
      <Folder Include="Assets/Textures" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonIcons" />
      <Folder Include="Assets/PolygonIcons" />
+     <Folder Include="Assets/Python/Lib/joblib/externals/loky" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Environments" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Materials/Misc" />
      <Folder Include="Assets/PolygonConstruction/Scenes" />
@@ -158,12 +160,19 @@
      <Folder Include="Assets/PolygonOffice/Prefabs/Props/Furniture" />
      <Folder Include="Assets/Objects/Prefabs/Buildings" />
      <Folder Include="Assets/Python/Lib/xml/etree" />
+<<<<<<< HEAD
+=======
+     <Folder Include="Assets/Python/Lib/joblib/externals" />
+>>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
      <Folder Include="Assets/PolygonOffice/Prefabs/Props" />
      <Folder Include="Assets/LeanTween/Documentation/classes" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Furniture/Materials" />
      <Folder Include="Assets/Python/Lib/pydoc_data" />
      <None Include="Assets/Python/IronPython-2.7.9/IronPython.xml" />
+<<<<<<< HEAD
      <Folder Include="Assets/UI/Innovation/Employee Engagament" />
+=======
+>>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs/Environments/Custom" />
      <Folder Include="Assets/Objects/Prefabs/Props" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Locomotive_01" />
@@ -190,6 +199,10 @@
      <Folder Include="Assets/Music" />
      <Folder Include="Assets/Objects/Models/Collisions" />
      <Folder Include="Assets/Python/Lib/multiprocessing/dummy" />
+<<<<<<< HEAD
+=======
+     <Folder Include="Assets/Python/Lib/joblib/externals/loky/backend" />
+>>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonIcons/Textures" />
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.6.0" />
      <None Include="Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml" />
@@ -209,6 +222,7 @@
      <Folder Include="Assets/Python/Lib/sqlite3" />
      <Folder Include="Assets/UI/Industry" />
      <Folder Include="Assets/PolygonConstruction/Prefabs/Characters/Attachments" />
+     <Folder Include="Assets/Python/Lib/joblib/externals/cloudpickle" />
      <Folder Include="Assets/Firebase" />
      <Folder Include="Assets/Python/Lib/lib2to3" />
      <Folder Include="Assets/Python/IronPython-2.7.9" />
@@ -311,10 +325,15 @@
      <Folder Include="Assets/HurlyBurly/FREE_LowPoly_SubwayEntrance/Models/Collisions" />
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Vehicles" />
      <Folder Include="Assets/Python/Lib/wsgiref" />
+<<<<<<< HEAD
+=======
+     <Folder Include="Assets/Python" />
+>>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
      <Folder Include="Assets/WSM Game Studio" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Physics" />
      <Folder Include="Assets/UI/Industry/Transportation" />
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity" />
+     <Folder Include="Assets/Python/Lib/joblib/test/_openmp_test_helper" />
      <Folder Include="Assets/Objects/Prefabs/Environments" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Prefabs/Misc" />
@@ -330,6 +349,7 @@
      <Folder Include="Assets/UI/Landfarm/Greenhouses" />
      <Folder Include="Assets/Dialogues/DialogueIndustry" />
      <Folder Include="Assets/UI/Residential/Public Transports" />
+     <Folder Include="Assets/Python/Lib/joblib/test" />
      <Folder Include="Assets/Firebase/Plugins/iOS" />
      <Folder Include="Assets/ElectricScooter/Models" />
      <Folder Include="Assets/UI/Landfarm/Cultivation" />
@@ -365,6 +385,7 @@
      <Folder Include="Assets/TextMesh Pro/Documentation" />
      <Folder Include="Assets/HurlyBurly/FREE_LowPoly_SubwayEntrance" />
      <Folder Include="Assets/Scripts/CharacterMovement/farm" />
+     <Folder Include="Assets/Python/Lib/joblib/test/data" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
      <Folder Include="Assets/Python/Lib/xml/sax" />
      <Folder Include="Assets/LeanTween/Documentation/assets/css" />
@@ -661,6 +682,9 @@
      <Reference Include="IKVM.Reflection">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IKVM.Reflection.dll</HintPath>
      </Reference>
+     <Reference Include="IKVM.Reflection">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IKVM.Reflection.dll</HintPath>
+     </Reference>
      <Reference Include="System.IO.Abstractions">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
      </Reference>
@@ -703,11 +727,17 @@
      <Reference Include="IronPython">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IronPython.dll</HintPath>
      </Reference>
+     <Reference Include="IronPython">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.dll</HintPath>
+     </Reference>
      <Reference Include="Accord.Video">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
      </Reference>
      <Reference Include="Microsoft.Scripting">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Scripting">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
@@ -753,6 +783,9 @@
      </Reference>
      <Reference Include="Microsoft.Scripting.Metadata">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.Metadata.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Scripting.Metadata">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.Metadata.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
@@ -831,6 +864,15 @@
      </Reference>
      <Reference Include="IronPython.SQLite">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IronPython.SQLite.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Dynamic">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Dynamic.dll</HintPath>
+     </Reference>
+     <Reference Include="IronPython.Modules">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.Modules.dll</HintPath>
+     </Reference>
+     <Reference Include="IronPython.SQLite">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.SQLite.dll</HintPath>
      </Reference>
      <Reference Include="Accord.MachineLearning 1">
      <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>

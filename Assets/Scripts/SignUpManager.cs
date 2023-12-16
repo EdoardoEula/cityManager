@@ -215,8 +215,8 @@ public class SignUpManager : MonoBehaviour
 
         Dictionary<string, object> defaultUserChoicesData = new Dictionary<string, object>
         {
-            { "Lab-grown meat", defaultChoice },
-            { "Open-land farming", defaultChoice },
+            { "Lab-grown meat", defaultChoice},
+            { "Open-land farming", defaultChoice},
             { "Intensive breeding", defaultChoice },
             { "Water collection", defaultChoice },
             { "Intensive greenhouse", defaultChoice },
@@ -296,6 +296,7 @@ public class SignUpManager : MonoBehaviour
                     Debug.Log("Default user choices saved successfully");
                 }
             });
+
     }
     
 
