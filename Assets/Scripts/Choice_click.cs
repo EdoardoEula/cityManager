@@ -8,6 +8,7 @@ using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
 using System.Threading.Tasks;
+using DG.Tweening;
 
 
 public class Choice_click : MonoBehaviour
@@ -27,9 +28,13 @@ public class Choice_click : MonoBehaviour
     private int money;
     private int co2;
     private int currentMoney;
+    private int currentCO2;
     private int queryDatabaseIsFinished;
     private int retrieveMoneyIsFinished;
     private bool isPanelOpen = false;
+    public TMP_Text moneyText;
+    public Slider co2Slider;
+    public Gradient gradient;
 
     // Start is called before the first frame update
     async void Start()
@@ -74,21 +79,25 @@ public class Choice_click : MonoBehaviour
 
         await QueryDatabase(objectNameToFind);
 
-        int updatedMoney = currentMoney - money;
+        GameManager.money_available = currentMoney - money;
+        GameManager.level_co2 = currentCO2 - co2;
         Debug.Log("Current Money" + currentMoney);
         Debug.Log("Choice Money" + money);
-        Debug.Log("Updated Money" + updatedMoney);
+        Debug.Log("Updated Money" + GameManager.money_available);
 
+        moneyText.text = GameManager.money_available.ToString();
+        UpdateCO2Bar();
+        
         // Update user_choice in Firebase
         await choiceRef.Child(objectNameToFind).SetValueAsync("Yes");
 
         // Disable buttons and set colors
-        // string buttonName = Title.text + "_btn";
-        // Button titleButton = GameObject.Find(buttonName).GetComponent<Button>();
-        // titleButton.interactable = false;
-        // Color buttonColor = titleButton.image.color;
-        // buttonColor.a = 0.5f;
-        // titleButton.image.color = buttonColor;
+        //string buttonName = Title.text + "_btn";
+        //Button titleButton = GameObject.Find(buttonName).GetComponent<Button>();
+        //titleButton.interactable = false;
+        //Color buttonColor = titleButton.image.color;
+        //buttonColor.a = 0.5f;
+        //titleButton.image.color = buttonColor;
 
         // Show the question panel
         questionpanel.SetActive(true);
@@ -168,7 +177,7 @@ public class Choice_click : MonoBehaviour
                 }
             }
 
-            await RetrievecurrentMoney(money);
+            await RetrievecurrentMoneyCo2(money, co2);
         }
         catch (Exception ex)
         {
@@ -176,10 +185,11 @@ public class Choice_click : MonoBehaviour
         }
     }
 
-    async Task RetrievecurrentMoney(int money)
+    async Task RetrievecurrentMoneyCo2(int money, int co2)
     {
         string currentUser = GameManager.currentUser;
         Debug.Log(money);
+        Debug.Log(co2);
         DatabaseReference userRef = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(currentUser);
 
         try
@@ -187,7 +197,9 @@ public class Choice_click : MonoBehaviour
             DataSnapshot snapshot = await userRef.GetValueAsync();
 
             object moneyAvailableObject = snapshot.Child("moneyAvailable").Value;
+            object co2Object = snapshot.Child("levelCO2").Value;
             Debug.Log(moneyAvailableObject);
+            Debug.Log(co2Object);
 
             if (moneyAvailableObject != null && int.TryParse(moneyAvailableObject.ToString(), out int moneyAvailable))
             {
@@ -199,6 +211,19 @@ public class Choice_click : MonoBehaviour
                 Debug.Log("Choice Money" + money);
                 Debug.Log("Updated Money" + updatedMoney);
                 UpdateMoneyInDatabase(updatedMoney);
+            }
+            else
+            {
+                Debug.LogError("Failed to retrieve 'moneyAvailable' from user data or convert it to int");
+            }
+            
+            if (co2Object != null && int.TryParse(co2Object.ToString(), out int co2Available))
+            {
+                currentCO2 = co2Available;
+                Debug.Log("Current CO2: " + currentCO2);
+
+                int updatedCO2 = currentCO2 - co2;
+                UpdateCO2InDatabase(updatedCO2);
             }
             else
             {
@@ -216,6 +241,28 @@ public class Choice_click : MonoBehaviour
         string currentUser = GameManager.currentUser;
         DatabaseReference userRef = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(currentUser);
         await userRef.Child("moneyAvailable").SetValueAsync(updatedMoney);
+    }
+    
+    async void UpdateCO2InDatabase(int updatedCO2)
+    {
+        string currentUser = GameManager.currentUser;
+        DatabaseReference userRef = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(currentUser);
+        await userRef.Child("levelCO2").SetValueAsync(updatedCO2);
+    }
+    
+    void UpdateCO2Bar()
+    {
+        // Calculate the normalized value between 0 and 1 based on the gradient
+        float normalizedValue = Mathf.InverseLerp(co2Slider.minValue, co2Slider.maxValue, GameManager.level_co2);
+
+        // Evaluate the color from the gradient based on the normalized value
+        Color color = gradient.Evaluate(normalizedValue);
+
+        // Apply the color to the slider's fill area
+        co2Slider.fillRect.GetComponent<Image>().color = color;
+
+        // Animate the slider value change using DOTween
+        co2Slider.DOValue(GameManager.level_co2, 0.8f);
     }
 }
 
