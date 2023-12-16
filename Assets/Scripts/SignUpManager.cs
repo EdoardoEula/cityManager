@@ -19,7 +19,11 @@ public class SignUpManager : MonoBehaviour
     public TMP_Dropdown educationDropdown;
     public TMP_Text signUpResult;
     public Button signUpButton;
-
+    
+    private void Awake()
+    {
+        passwordInput.contentType = TMP_InputField.ContentType.Password;
+    }
     private void Start()
     {
         signUpButton.onClick.AddListener(SignUp);

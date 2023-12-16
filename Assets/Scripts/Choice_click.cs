@@ -1,12 +1,8 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Firebase;
 using Firebase.Database;
-using Firebase.Extensions;
 using System.Threading.Tasks;
 using DG.Tweening;
 
@@ -265,4 +261,3 @@ public class Choice_click : MonoBehaviour
         co2Slider.DOValue(GameManager.level_co2, 0.8f);
     }
 }
-
