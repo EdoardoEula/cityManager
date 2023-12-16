@@ -335,6 +335,9 @@
      <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
      </Reference>
+     <Reference Include="IKVM.Reflection">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IKVM.Reflection.dll</HintPath>
+     </Reference>
      <Reference Include="System.IO.Abstractions">
      <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
      </Reference>
@@ -374,8 +377,14 @@
      <Reference Include="Accord 1">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord 1.dll</HintPath>
      </Reference>
+     <Reference Include="IronPython">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.dll</HintPath>
+     </Reference>
      <Reference Include="Accord.Video">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Scripting">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
@@ -418,6 +427,9 @@
      </Reference>
      <Reference Include="Firebase.Auth">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Scripting.Metadata">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.Metadata.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
@@ -487,6 +499,15 @@
      </Reference>
      <Reference Include="Accord.Video.Kinect">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.Kinect.dll</HintPath>
+     </Reference>
+     <Reference Include="Microsoft.Dynamic">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Dynamic.dll</HintPath>
+     </Reference>
+     <Reference Include="IronPython.Modules">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.Modules.dll</HintPath>
+     </Reference>
+     <Reference Include="IronPython.SQLite">
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.SQLite.dll</HintPath>
      </Reference>
      <Reference Include="Accord.MachineLearning 1">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>
