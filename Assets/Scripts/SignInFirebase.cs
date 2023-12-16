@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using Firebase.Auth;
@@ -17,6 +18,11 @@ public class SignInFirebase : MonoBehaviour
     public Button signInButton;
     public TMP_Text textPwd;
     DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
+
+    private void Awake()
+    {
+        passwordInput.contentType = TMP_InputField.ContentType.Password;
+    }
 
     private void Start()
     {
