@@ -6,7 +6,6 @@ public class GameManager1 : MonoBehaviour
     public float durataGioco = 30.0f;
     private float tempoIniziale;
     private bool giocoFinito = false;
-
     public Image iconaGameOver;
     public GameObject Ciclista_0;  // Riferimento al GameObject del giocatore
 
