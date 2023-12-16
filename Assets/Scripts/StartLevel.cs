@@ -57,6 +57,9 @@ public class StartLevel : MonoBehaviour
                     Debug.Log($"{choiceName}: {choiceValue}");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
                     //Find the corresponding GameObject in the 'World';
                     Transform choiceObject = World.transform.Find(choiceName);
 
@@ -69,6 +72,7 @@ public class StartLevel : MonoBehaviour
                        choiceObject.GetChild(0).gameObject.SetActive(choiceValue == "No");
                        choiceObject.GetChild(1).gameObject.SetActive(choiceValue == "Yes");
                     }
+<<<<<<< HEAD
 =======
                     // Find the corresponding GameObject in the 'World'
                     //Transform choiceObject = World.transform.Find(choiceName);
@@ -84,6 +88,8 @@ public class StartLevel : MonoBehaviour
                         //choiceObject.GetChild(1).gameObject.SetActive(choiceValue == "YES");
                     //}
 >>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
+=======
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
                 }
             });
         }

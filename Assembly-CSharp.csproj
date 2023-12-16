@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{a1174091-3c29-a2b2-506f-49d8c7abe89c}</ProjectGuid>
+    <ProjectGuid>{af3b64f7-fb81-3710-d6b7-bdbda9b55fa8}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -161,18 +161,26 @@
      <Folder Include="Assets/Objects/Prefabs/Buildings" />
      <Folder Include="Assets/Python/Lib/xml/etree" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      <Folder Include="Assets/Python/Lib/joblib/externals" />
 >>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
+=======
+     <Folder Include="Assets/Python/Lib/joblib/externals" />
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
      <Folder Include="Assets/PolygonOffice/Prefabs/Props" />
      <Folder Include="Assets/LeanTween/Documentation/classes" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Furniture/Materials" />
      <Folder Include="Assets/Python/Lib/pydoc_data" />
      <None Include="Assets/Python/IronPython-2.7.9/IronPython.xml" />
 <<<<<<< HEAD
+<<<<<<< HEAD
      <Folder Include="Assets/UI/Innovation/Employee Engagament" />
 =======
 >>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
+=======
+     <Folder Include="Assets/UI/Innovation/Employee Engagament" />
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonCity/Prefabs/Environments/Custom" />
      <Folder Include="Assets/Objects/Prefabs/Props" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Models/Locomotive_01" />
@@ -200,9 +208,13 @@
      <Folder Include="Assets/Objects/Models/Collisions" />
      <Folder Include="Assets/Python/Lib/multiprocessing/dummy" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      <Folder Include="Assets/Python/Lib/joblib/externals/loky/backend" />
 >>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
+=======
+     <Folder Include="Assets/Python/Lib/joblib/externals/loky/backend" />
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonIcons/Textures" />
      <Folder Include="Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/11.6.0" />
      <None Include="Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml" />
@@ -306,7 +318,6 @@
      <Folder Include="Assets/Objects/Industrial/Materials" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <Folder Include="Assets/Objects/Industrial" />
-     <Folder Include="Assets/Python" />
      <Folder Include="Assets/PolygonOffice/Scene" />
      <Folder Include="Assets/UI/Buttons/Industry" />
      <Folder Include="Assets/Firebase/Plugins/x86_64" />
@@ -326,9 +337,13 @@
      <Folder Include="Assets/Objects/PolygonAssetss/PolygonFarm/Prefabs/Vehicles" />
      <Folder Include="Assets/Python/Lib/wsgiref" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
      <Folder Include="Assets/Python" />
 >>>>>>> b73aa20e17e8e699a74d7100b43b82ccfacd9a57
+=======
+     <Folder Include="Assets/Python" />
+>>>>>>> 6c2f4c3d7098167d370c35db36f9875d45135eb7
      <Folder Include="Assets/WSM Game Studio" />
      <Folder Include="Assets/WSM Game Studio/Train Controller_v3/Shared/Physics" />
      <Folder Include="Assets/UI/Industry/Transportation" />
@@ -674,196 +689,175 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Genetic">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Genetic.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Genetic.dll</HintPath>
      </Reference>
      <Reference Include="Microsoft.VisualStudio.DebuggerVisualizers">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
-     </Reference>
-     <Reference Include="IKVM.Reflection">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IKVM.Reflection.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Microsoft.VisualStudio.DebuggerVisualizers.dll</HintPath>
      </Reference>
      <Reference Include="IKVM.Reflection">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IKVM.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="System.IO.Abstractions">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.dll</HintPath>
      </Reference>
      <Reference Include="Accord.MachineLearning">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.MachineLearning.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.dll</HintPath>
      </Reference>
      <Reference Include="SharpDX">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/SharpDX.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Analytics">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Analytics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.collections@1.2.4/Unity.Collections.LowLevel.ILSupport/Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ext.nunit@2.0.3/net40/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math.Noncommercial">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Math.Noncommercial.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Noncommercial.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Imaging.Noncommercial">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Imaging.Noncommercial.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.Noncommercial.dll</HintPath>
      </Reference>
      <Reference Include="ReportGeneratorMerged">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Accord.MachineLearning.GPL">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.MachineLearning.GPL.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning.GPL.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Math 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls.Vision 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.Vision 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord 1.dll</HintPath>
-     </Reference>
-     <Reference Include="IronPython">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IronPython.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord 1.dll</HintPath>
      </Reference>
      <Reference Include="IronPython">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.Scripting">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.dll</HintPath>
      </Reference>
      <Reference Include="Microsoft.Scripting">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.App">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Statistics 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Statistics 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics 1.dll</HintPath>
      </Reference>
      <Reference Include="ZedGraph">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/ZedGraph.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ZedGraph.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Audio.DirectSound">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Audio.DirectSound.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.DirectSound.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Audio">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Audio.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audio.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Vision">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Vision.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision.dll</HintPath>
      </Reference>
      <Reference Include="System.Interactive.Async">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/System.Interactive.Async.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls.Audio">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.Audio.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Audio.dll</HintPath>
      </Reference>
      <Reference Include="ICSharpCode.SharpZipLib">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/ICSharpCode.SharpZipLib.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ICSharpCode.SharpZipLib.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math.Core">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Math.Core.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Text">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Text.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Text.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Auth">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.Scripting.Metadata">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.Metadata.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
      </Reference>
      <Reference Include="Microsoft.Scripting.Metadata">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Scripting.Metadata.dll</HintPath>
      </Reference>
      <Reference Include="DOTween">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Database">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
      </Reference>
      <Reference Include="Mono.Data.Sqlite">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
      </Reference>
      <Reference Include="Accord.DataSets">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.DataSets.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DataSets.dll</HintPath>
      </Reference>
      <Reference Include="Accord.IO">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.IO.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.IO.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Imaging 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Imaging 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Neuro">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Neuro.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Neuro.dll</HintPath>
      </Reference>
      <Reference Include="SharpDX.DirectSound">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/SharpDX.DirectSound.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/SharpDX.DirectSound.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Google.Protobuf">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.barracuda@3.0.0/Barracuda/Runtime/Plugins/ProtoBuffer/Google.Protobuf.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls.Imaging">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.Imaging.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging.dll</HintPath>
      </Reference>
      <Reference Include="Accord.DebuggerVisualizers.GPL">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.DebuggerVisualizers.GPL.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.DebuggerVisualizers.GPL.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video.DirectShow">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.DirectShow.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.DirectShow.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video.VFW">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.VFW.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.VFW.dll</HintPath>
      </Reference>
      <Reference Include="Grpc.Core">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/ProtoBuffer/Grpc.Core.dll</HintPath>
      </Reference>
      <Reference Include="Mono.Cecil">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.nuget.mono-cecil@1.11.4/Mono.Cecil.dll</HintPath>
      </Reference>
      <Reference Include="System.IO.Abstractions.TestingHelpers">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/PackageCache/com.unity.ml-agents@2.0.1/Plugins/System.IO.Abstractions.TestingHelpers.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.Platform">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video.Ximea">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.Ximea.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.Ximea.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Fuzzy">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Fuzzy.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Fuzzy.dll</HintPath>
      </Reference>
      <Reference Include="Google.MiniJson">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Audition">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Audition.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Audition.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video.Kinect">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video.Kinect.dll</HintPath>
-     </Reference>
-     <Reference Include="Microsoft.Dynamic">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/Microsoft.Dynamic.dll</HintPath>
-     </Reference>
-     <Reference Include="IronPython.Modules">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IronPython.Modules.dll</HintPath>
-     </Reference>
-     <Reference Include="IronPython.SQLite">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Python/IronPython-2.7.9/IronPython.SQLite.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video.Kinect.dll</HintPath>
      </Reference>
      <Reference Include="Microsoft.Dynamic">
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/Microsoft.Dynamic.dll</HintPath>
@@ -875,46 +869,46 @@
      <HintPath>/Volumes/eeSSD/CityManager/Assets/Python/IronPython-2.7.9/IronPython.SQLite.dll</HintPath>
      </Reference>
      <Reference Include="Accord.MachineLearning 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.MachineLearning 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Math.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls.Vision">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.Vision.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Vision.dll</HintPath>
      </Reference>
      <Reference Include="Accord">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Video 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Video 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Video 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Statistics">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Statistics.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Statistics 2">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Statistics 2.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Statistics 2.dll</HintPath>
      </Reference>
      <Reference Include="ZedGraph 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/ZedGraph 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/ZedGraph 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Vision 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Vision 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Vision 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Math.Core 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Math.Core 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Math.Core 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls 1.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Imaging">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Imaging.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Imaging 2">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Imaging 2.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Imaging 2.dll</HintPath>
      </Reference>
      <Reference Include="Accord.Controls.Imaging 1">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Assets/Plugins/Accord/Accord.Controls.Imaging 1.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Assets/Plugins/Accord/Accord.Controls.Imaging 1.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -1298,149 +1292,149 @@
      <HintPath>/Applications/Unity/Hub/Editor/2023.1.14f1/Unity.app/Contents/UnityReferenceAssemblies/unity-4.8-api/Facades/netstandard.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ML-Agents.CommunicatorObjects">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.CommunicatorObjects.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.iOSBLAS">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.iOSBLAS.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Networking.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Networking.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Netcode.Runtime">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.EditorCoroutines.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.BurstBLAS">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.BurstBLAS.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Networking.Transport">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Networking.Transport.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Scripting.Python.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Scripting.Python.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Scripting.Python.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.ONNX">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.ONNX.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ML-Agents">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.ML-Agents.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.ML-Agents.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Netcode.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Collections.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Barracuda.MacBLAS">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Barracuda.MacBLAS.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Netcode.Components">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Netcode.Components.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Components.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Netcode.Editor.PackageChecker">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.PackageChecker.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.Netcode.Editor.PackageChecker.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>/Users/giuliaferri/ProgettoUnity/cityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>/Volumes/eeSSD/CityManager/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{b4c33941-0d01-1507-3ca4-f9d510c57b5f}</Project>
+      <Project>{da3efa13-852d-a96d-5394-14d2880d2eec}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
     <ProjectReference Include="com.leantween.editor.csproj">
-      <Project>{824580ac-aa7b-8080-e2a3-494ce1752ff0}</Project>
+      <Project>{625dca20-1a75-aff0-5c23-3106f5d2025c}</Project>
       <Name>com.leantween.editor</Name>
     </ProjectReference>
     <ProjectReference Include="com.leantween.csproj">
-      <Project>{7172d6d6-2678-0fa8-3cf0-5288c04d5a30}</Project>
+      <Project>{7c0fc349-3c33-d273-5751-f453b7812f5b}</Project>
       <Name>com.leantween</Name>
     </ProjectReference>
   </ItemGroup>
