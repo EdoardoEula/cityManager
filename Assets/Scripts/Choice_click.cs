@@ -34,6 +34,7 @@ public class Choice_click : MonoBehaviour
     public Slider co2Slider;
     public Gradient gradient;
     public Button[] buttons;
+    public AudioSource popUpSound;
 
     // Start is called before the first frame update
     async void Start()
@@ -101,7 +102,7 @@ public class Choice_click : MonoBehaviour
         //titleButton.image.color = buttonColor;
 
         // Show the question panel
-        questionpanel.SetActive(true);
+        //questionpanel.SetActive(true);
 
         //Enable buttons
         DisableButtons();
@@ -110,7 +111,16 @@ public class Choice_click : MonoBehaviour
         // Close areusure panel
         areusure_panel.SetActive(false);
         isPanelOpen = false;
-        questionpanel.SetActive(false);
+        
+        // Assuming title is a Text component
+        string concatenatedName = Title.text + "_btn";
+
+        // Find the GameObject using the concatenated name
+        GameObject buttonChoice = GameObject.Find(concatenatedName);
+        
+        Btn_click click_btn = buttonChoice.GetComponent<Btn_click>();
+        
+        click_btn.ToggleVisibility();
 
         // After 1 second, set children of World with the same name as choice_invest visible
         Invoke("ShowWorldChildren", 0.2f);
@@ -194,6 +204,7 @@ public class Choice_click : MonoBehaviour
         Transform child = World.transform.Find(objectNameToFind);
         if (child != null)
         {
+            popUpSound.Play();
             child.GetChild(0).gameObject.SetActive(false);
             child.GetChild(1).gameObject.SetActive(true);
         }

@@ -164,7 +164,7 @@ public class SignUpManager : MonoBehaviour
 
         // Define default values
         int defaultMoneyAvailable = 5000;
-        int defaultLevelCO2 = 100;
+        int defaultLevelCO2 = 1000;
         int defaultPersonalizationField = 0;
 
         // Get the values from the input fields

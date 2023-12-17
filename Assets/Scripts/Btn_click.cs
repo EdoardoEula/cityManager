@@ -1,10 +1,11 @@
-using Firebase;
+using System;
 using Firebase.Database;
 using Firebase.Extensions;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Threading.Tasks;
+using Unity.VisualScripting;
 
 public class Btn_click : MonoBehaviour
 {
@@ -27,30 +28,28 @@ public class Btn_click : MonoBehaviour
     public TextMeshProUGUI secondmoneytext;
     public TextMeshProUGUI thirdmoneytext;
     public TextMeshProUGUI title;
-    public Sprite firstImageSprite;
-    public Sprite secondImageSprite;
-    public Sprite thirdImageSprite;
     public Image firstImage;
     public Image secondImage;
     public Image thirdImage;
+    public Sprite firstImageSprite;
+    public Sprite secondImageSprite;
+    public Sprite thirdImageSprite;
 
-    private bool isCanvasVisible = false;
+    public bool isCanvasVisible = false;
     private bool clicked_mybutton = false;
-    
-
-    DatabaseReference databaseReference;
 
     void Start()
     {
         myButton.onClick.AddListener(ToggleVisibility);
+        UpdateButtonState();
     }
 
-    void ToggleVisibility()
+    public async void ToggleVisibility()
     {
         isCanvasVisible = !isCanvasVisible;
         clicked_mybutton = !clicked_mybutton;
-
         canvasQuestionPanel.enabled = isCanvasVisible;
+
         if (infoPanel.activeSelf)
         {
             infoPanel.SetActive(false);
@@ -60,19 +59,15 @@ public class Btn_click : MonoBehaviour
         firstchoicetext.text = inputText_firstChoice;
         secondchoicetext.text = inputText_secondChoice;
         thirdchoicetext.text = inputText_thirdChoice;
-        
-        Debug.Log(firstchoicetext.text);
-        
-        TextMeshProUGUI[] choiceTexts = new TextMeshProUGUI[] { firstchoicetext, secondchoicetext, thirdchoicetext };
-        Debug.Log(choiceTexts);
 
-// Define an array to hold your money texts
-        TextMeshProUGUI[] moneyTexts = new TextMeshProUGUI[] { firstmoneytext, secondmoneytext, thirdmoneytext };
-
-// Iterate through choices
-        for (int i = 0; i < choiceTexts.Length; i++)
+        string[] choices = { inputText_firstChoice, inputText_secondChoice, inputText_thirdChoice };
+        TextMeshProUGUI[] moneyTextArray = { firstmoneytext, secondmoneytext, thirdmoneytext };
+        int moneyTextIndex = 0;
+        
+        for (int i = 0; i < choices.Length; i++)
         {
-            string selectedChoice = choiceTexts[i].text;
+            string selectedChoice = choices[i];
+            Debug.Log("Current Choice: " + selectedChoice);
 
             DatabaseReference choicesref = FirebaseDatabase.DefaultInstance.RootReference.Child("choice_mon_co2");
             choicesref.OrderByChild("Change").EqualTo(selectedChoice).GetValueAsync().ContinueWithOnMainThread(task =>
@@ -83,26 +78,28 @@ public class Btn_click : MonoBehaviour
                 }
                 else if (task.IsCompleted)
                 {
+                    Debug.Log("In the database");
                     DataSnapshot snapshot = task.Result;
-                    // Iterate through the results (there should be only one match)
+
                     foreach (DataSnapshot money_co2Snap in snapshot.Children)
                     {
-                        // Extract the "Info" field and set it to info_description
                         object moneyObject = money_co2Snap.Child("Cost").Value;
-                        if (moneyObject != null)
-                        {
-                            moneyTexts[i].text = moneyObject.ToString();
-                            Debug.Log("Money inside previous function: " + moneyTexts[i]);
-                        }
+                        string moneyValue = moneyObject.ToString();
+                        Debug.Log("MoneyValue: " + moneyValue);
+                        Debug.Log("Index: " + moneyTextIndex);
+                        Debug.Log("Length Array: " + moneyTextArray.Length);
+                        moneyTextArray[moneyTextIndex].text = moneyValue;
+                        moneyTextIndex += 1;
                     }
                 }
             });
         }
-        InsertImages();
-        UpdateButtonState();
-    }
 
-    void InsertImages()
+        await InsertImages();
+    }
+    
+
+    async Task InsertImages()
     {
         firstImage.sprite = firstImageSprite;
         secondImage.sprite = secondImageSprite;
@@ -123,11 +120,48 @@ public class Btn_click : MonoBehaviour
 
     void EnableButtons(params Button[] buttons)
     {
-        foreach (var button in buttons)
+        string currentUser = GameManager.currentUser;
+
+        if (string.IsNullOrEmpty(currentUser))
         {
-            button.interactable = true;
-            SetButtonTransparency(button, 1f);
+            Debug.LogError("Current user is null or empty.");
+            return;
         }
+
+        DatabaseReference buttonsRef = FirebaseDatabase.DefaultInstance.RootReference.Child("buttons").Child(currentUser);
+
+        buttonsRef.GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Error retrieving buttons data from Firebase: " + task.Exception);
+                return;
+            }
+
+            DataSnapshot buttonsSnapshot = task.Result;
+
+            foreach (Button button in buttons)
+            {
+                string buttonName = button.name;
+                buttonName = buttonName.Replace("_btn", "");
+
+                if (buttonsSnapshot.HasChild(buttonName))
+                {
+                    string buttonValue = buttonsSnapshot.Child(buttonName).Value.ToString();
+                    string buttonObjectName = buttonValue + "_btn";
+
+                    if (buttonObjectName != null)
+                    {
+                        bool isInteractable = buttonValue.Equals("On", StringComparison.OrdinalIgnoreCase);
+                        button.interactable = isInteractable;
+                    }
+                }
+                else
+                {
+                    Debug.LogWarning($"Button {buttonName} not found in Firebase data.");
+                }
+            }
+        });
     }
 
     void DisableButtons(params Button[] buttons)
@@ -135,14 +169,6 @@ public class Btn_click : MonoBehaviour
         foreach (var button in buttons)
         {
             button.interactable = false;
-            SetButtonTransparency(button, 0.5f);
         }
-    }
-
-    void SetButtonTransparency(Button button, float transparency)
-    {
-        Color buttonColor = button.image.color;
-        buttonColor.a = transparency;
-        button.image.color = buttonColor;
     }
 }

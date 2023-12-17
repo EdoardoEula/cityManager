@@ -1,15 +1,23 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Firebase;
 using Firebase.Database;
 using Firebase.Extensions;
+using Unity.VisualScripting;
 
 public class StartLevel : MonoBehaviour
 {
     public TMP_Text moneyText;
     public GameObject World;
     public GameObject UI;
+    public AudioSource backgroundMusic;
+
+    private void Awake()
+    {
+        backgroundMusic.Play();
+    }
 
     void Start()
     {
