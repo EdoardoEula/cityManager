@@ -83,7 +83,7 @@ public class DialogueManager_welcome : MonoBehaviour
                     yield break; // Exit the coroutine early
                 }
 
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(0.000000000000000000001f);
             }
 
             // Enable the ContinueButton after the entire sentence is displayed

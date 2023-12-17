@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Firebase.Database;
 using System.Threading.Tasks;
 using DG.Tweening;
+using Firebase.Extensions;
 
 
 public class Choice_click : MonoBehaviour
@@ -31,6 +33,7 @@ public class Choice_click : MonoBehaviour
     public TMP_Text moneyText;
     public Slider co2Slider;
     public Gradient gradient;
+    public Button[] buttons;
 
     // Start is called before the first frame update
     async void Start()
@@ -45,10 +48,10 @@ public class Choice_click : MonoBehaviour
     {
         if (!isPanelOpen)
         {
-            if (questionpanel.activeSelf)
-            {
-                questionpanel.SetActive(false);
-            }
+            //if (questionpanel.activeSelf)
+            //{
+              //  questionpanel.SetActive(false);
+            //}
 
             areusure_panel.SetActive(true);
             choice_invest.text = invest_to_copy.text;
@@ -73,7 +76,7 @@ public class Choice_click : MonoBehaviour
         DatabaseReference choiceRef = FirebaseDatabase.DefaultInstance.RootReference.Child("user_choice").Child(currentUser);
         string objectNameToFind = choice_invest.text;
 
-        await QueryDatabase(objectNameToFind);
+        await QueryDatabaseMoneyCo2(objectNameToFind);
 
         GameManager.money_available = currentMoney - money;
         GameManager.level_co2 = currentCO2 - co2;
@@ -84,8 +87,10 @@ public class Choice_click : MonoBehaviour
         moneyText.text = GameManager.money_available.ToString();
         UpdateCO2Bar();
         
-        // Update user_choice in Firebase
+        // Update user_choice and button_status in Firebase
         await choiceRef.Child(objectNameToFind).SetValueAsync("Yes");
+        await UpdateButtonStatus(Title.text, currentUser);
+        
 
         // Disable buttons and set colors
         //string buttonName = Title.text + "_btn";
@@ -98,16 +103,88 @@ public class Choice_click : MonoBehaviour
         // Show the question panel
         questionpanel.SetActive(true);
 
-        // Enable buttons
-        mychoicebutton2.interactable = true;
-        mychoicebutton3.interactable = true;
+        //Enable buttons
+        DisableButtons();
+        EnableButtons();
 
         // Close areusure panel
         areusure_panel.SetActive(false);
         isPanelOpen = false;
+        questionpanel.SetActive(false);
 
         // After 1 second, set children of World with the same name as choice_invest visible
         Invoke("ShowWorldChildren", 0.2f);
+    }
+    
+    void DisableButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            button.interactable = false;
+        }
+    }
+    
+    void EnableButtons()
+    {
+        // Retrieve currentUser public variable from the script GameManager
+        string currentUser = GameManager.currentUser;
+
+        if (string.IsNullOrEmpty(currentUser))
+        {
+            Debug.LogError("Current user is null or empty.");
+            return;
+        }
+
+        DatabaseReference buttonsRef = FirebaseDatabase.DefaultInstance.RootReference.Child("buttons").Child(currentUser);
+
+        buttonsRef.GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Error retrieving buttons data from Firebase: " + task.Exception);
+                return;
+            }
+
+            DataSnapshot buttonsSnapshot = task.Result;
+
+            foreach (Button button in buttons)
+            {
+                string buttonName = button.name;
+                Debug.Log(buttonName);
+
+                buttonName = buttonName.Replace("_btn", "");
+                Debug.Log(buttonName + "without btn");
+
+
+                // Check if the button name exists in the Firebase data
+                if (buttonsSnapshot.HasChild(buttonName))
+                {
+                    string buttonValue = buttonsSnapshot.Child(buttonName).Value.ToString();
+                    Debug.Log($"{buttonName}: {buttonValue}");
+
+                    // Append '_btn' to the button name
+                    string buttonObjectName = buttonValue + "_btn";
+                    
+                    if (buttonObjectName != null)
+                    {
+                        Debug.Log("Button Object found");
+                        
+                        // Set button interactable based on the value from Firebase
+                        bool isInteractable = buttonValue.Equals("On", StringComparison.OrdinalIgnoreCase);
+                        button.interactable = isInteractable;
+                    }
+                    else
+                    {
+                        Debug.Log("Button Object not found");
+                    }
+                }
+                else
+                {
+                    // Handle the case where the button name is not found in Firebase data
+                    Debug.LogWarning($"Button {buttonName} not found in Firebase data.");
+                }
+            }
+        });
     }
 
     void ShowWorldChildren()
@@ -136,7 +213,7 @@ public class Choice_click : MonoBehaviour
         isPanelOpen = false;
     }
 
-    async Task QueryDatabase(string selectedChoice)
+    async Task QueryDatabaseMoneyCo2(string selectedChoice)
     {
         // Reference to the "infos" node in the database
         DatabaseReference monCo2Ref = FirebaseDatabase.DefaultInstance.RootReference.Child("choice_mon_co2");
@@ -244,6 +321,21 @@ public class Choice_click : MonoBehaviour
         string currentUser = GameManager.currentUser;
         DatabaseReference userRef = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(currentUser);
         await userRef.Child("levelCO2").SetValueAsync(updatedCO2);
+    }
+    
+    async Task UpdateButtonStatus(string choiceGroup, string currentUser)
+    {
+        // Reference to the "infos" node in the database
+        DatabaseReference buttonStatus = FirebaseDatabase.DefaultInstance.RootReference.Child("buttons").Child(currentUser);
+
+        try
+        {
+            await buttonStatus.Child(choiceGroup).SetValueAsync("Off");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("Error saving in database: " + ex.Message);
+        }
     }
     
     void UpdateCO2Bar()
