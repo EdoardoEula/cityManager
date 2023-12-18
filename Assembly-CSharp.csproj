@@ -57,6 +57,7 @@
      <Compile Include="Assets/Scripts/Canva_start.cs" />
      <Compile Include="Assets/Scripts/StartLevel.cs" />
      <Compile Include="Assets/Python/Scripts/DebugLogWriter.cs" />
+     <Compile Include="Assets/Scripts/Reset_animation.cs" />
      <Compile Include="Assets/Python/Examples/PythonLibrary.cs" />
      <Compile Include="Assets/scriptsCycling/CollectedText.cs" />
      <Compile Include="Assets/scriptsCycling/timer.cs" />
@@ -82,6 +83,7 @@
      <Compile Include="Assets/Dialogues/DialogueIndustry/DialogueManagerInd.cs" />
      <Compile Include="Assets/scriptsCycling/GameManager1.cs" />
      <Compile Include="Assets/Scripts/Info_click.cs" />
+     <Compile Include="Assets/Scripts/ClearTweensOnSceneLoad.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Scripts/ChangeCamera.cs" />
      <Compile Include="Assets/Dialogues/DialogueFarm/characterMovementfarm.cs" />

@@ -17,7 +17,6 @@ public class SignInFirebase : MonoBehaviour
     public TMP_InputField passwordInput;
     public Button signInButton;
     public TMP_Text textPwd;
-    DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
 
     private void Awake()
     {
@@ -31,6 +30,7 @@ public class SignInFirebase : MonoBehaviour
 
     private void SignIn()
     {
+        DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
         string email = emailInput.text;
         string password = passwordInput.text;
 
@@ -106,6 +106,7 @@ public class SignInFirebase : MonoBehaviour
 
     private void RetrieveUserData(string userId)
     {
+        DatabaseReference reference = FirebaseDatabase.DefaultInstance.RootReference;
         DatabaseReference userReference = reference.Child("users").Child(userId);
 
         userReference.GetValueAsync().ContinueWithOnMainThread(task =>

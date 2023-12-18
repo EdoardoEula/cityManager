@@ -199,6 +199,7 @@ public class ChangeCamera : MonoBehaviour
         yield return new WaitForSeconds(fadeInDelay); // Add a pause before fade-in
 
         StartCoroutine(FadeInCanvas(canvas));
+    
     }
 
     private IEnumerator FadeInCanvas(Canvas canvas)

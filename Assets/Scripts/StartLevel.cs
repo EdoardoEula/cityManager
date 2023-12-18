@@ -13,14 +13,30 @@ public class StartLevel : MonoBehaviour
     public GameObject World;
     public GameObject UI;
     public AudioSource backgroundMusic;
+    private static StartLevel instance;
 
     private void Awake()
     {
+        if (instance != null && instance != this)
+        {
+            // If an instance already exists, destroy this new instance
+            Destroy(gameObject);
+            return;
+        }
+
+        // Set the instance to this script
+        instance = this;
+
+        // Keep this GameObject alive when loading new scenes
+        DontDestroyOnLoad(gameObject);
+
         backgroundMusic.Play();
     }
 
     void Start()
     {
+        Debug.Log("Start Level");
+        RetrieveUserData(GameManager.currentUser);
         if (moneyText != null)
         {
             moneyText.text = $"{GameManager.money_available}";
@@ -31,6 +47,44 @@ public class StartLevel : MonoBehaviour
         }
 
         ProcessUserChoices();
+    }
+    
+    private void RetrieveUserData(string userId)
+    {
+        DatabaseReference userReference = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(userId);
+
+        userReference.GetValueAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsFaulted)
+            {
+                Debug.LogError("Failed to retrieve user data: " + task.Exception);
+                return;
+            }
+
+            DataSnapshot userDataSnapshot = task.Result;
+
+            if (userDataSnapshot != null && userDataSnapshot.Exists)
+            {
+                // Convert the JSON data to a dictionary
+                Dictionary<string, object> userDataDict = userDataSnapshot.Value as Dictionary<string, object>;
+
+                if (userDataDict != null)
+                {
+                    // Access individual values
+                    GameManager.money_available = ConvertToInt(userDataDict["moneyAvailable"]);
+                    GameManager.level_co2 = ConvertToInt(userDataDict["levelCO2"]);
+                    GameManager.personalization = ConvertToInt(userDataDict["personalizationField"]);
+
+                    // Now you can use these values as needed
+                    Debug.LogFormat("User Data - Money Available: {0}, LevelCO2: {1}, Personalization Field: {2}",
+                        GameManager.money_available, GameManager.level_co2, GameManager.personalization);
+                }
+            }
+            else
+            {
+                Debug.LogWarning("User data not found for user ID: " + userId);
+            }
+        });
     }
 
     private void ProcessUserChoices()
@@ -75,5 +129,9 @@ public class StartLevel : MonoBehaviour
                 }
             });
         }
+    }
+    private int ConvertToInt(object value)
+    {
+        return value != null ? System.Convert.ToInt32(value) : 0;
     }
 }
