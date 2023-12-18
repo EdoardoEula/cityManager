@@ -38,7 +38,7 @@ public class DialogueManagerOff : MonoBehaviour,IDialogueManager
     {
         animator.SetBool("isOpen", true);
         Debug.Log("Starting conversation with " + dialogue.character);
-        nameText.text = "Claire Verylongsquare";
+        nameText.text = "Emily Johnson";
         sentences.Clear();
         sentences.Enqueue(dialogue.sentence);
         DisplayNextSentence();

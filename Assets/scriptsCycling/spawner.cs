@@ -1,5 +1,7 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
+using Firebase.Database;
 
 public class Spawner : MonoBehaviour
 {
@@ -34,8 +36,8 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(gameDuration);
         // Add any logic to stop the game here
         Debug.Log("Game Over");
-        // You can use Application.Quit() to exit the application, or set a flag to stop the game loop.
-        Application.Quit(); // Uncomment this line if you want to exit the application.
+        DatabaseReference userRef = FirebaseDatabase.DefaultInstance.RootReference.Child("users").Child(GameManager.currentUser);
+        userRef.Child("moneyAvailable").SetValueAsync(GameManager.money_available);
     }
 
     void SpawnObject()

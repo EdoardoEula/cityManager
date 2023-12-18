@@ -1,5 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using System.Collections.Generic;
+using TMPro;
+using Firebase.Database;
+using System.Threading.Tasks;
+using DG.Tweening;
+using Firebase.Extensions;
 
 public class GameManager1 : MonoBehaviour
 {
@@ -52,4 +59,5 @@ public class GameManager1 : MonoBehaviour
             giocoFinito = true;
         }
     }
+    
 }

@@ -10,9 +10,9 @@ public class DisappearOnCollision : MonoBehaviour
     void UpDate()
     {
         //transform.Translate(Vector2.left * speed * Time.deltaTime);
-        if (transform.position.x < -20)
+        if (transform.position.x < -20 && gameObject != null)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
     // This method is called when another collider enters the trigger of this object
@@ -21,8 +21,10 @@ public class DisappearOnCollision : MonoBehaviour
         if (col.CompareTag("Projectile"))
         {
             Debug.Log("collided with the player");
-            Destroy(gameObject);
+            if(gameObject != null)
+                Destroy(gameObject);
             count = count + 1;
+            GameManager.money_available++;
             SetCountText();
         }
         
@@ -31,7 +33,7 @@ public class DisappearOnCollision : MonoBehaviour
     void SetCountText()
     {
         // Update the count text with the current count.
-        countText.text = " " + count.ToString();
+        countText.text = "Money: " + count.ToString();
 
         
     }

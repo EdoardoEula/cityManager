@@ -15,7 +15,7 @@ public class Choice_click : MonoBehaviour
     public Button yes_btn;
     public Button No_btn;
     public GameObject areusure_panel;
-    public GameObject questionpanel;
+    public Canvas questionpanel;
     public GameObject World;
     public TextMeshProUGUI choice_invest;
     public TextMeshProUGUI invest_to_copy;
@@ -111,17 +111,9 @@ public class Choice_click : MonoBehaviour
         // Close areusure panel
         areusure_panel.SetActive(false);
         isPanelOpen = false;
-        
-        // Assuming title is a Text component
-        string concatenatedName = Title.text + "_btn";
 
-        // Find the GameObject using the concatenated name
-        GameObject buttonChoice = GameObject.Find(concatenatedName);
+        questionpanel.enabled = false;
         
-        Btn_click click_btn = buttonChoice.GetComponent<Btn_click>();
-        
-        click_btn.ToggleVisibility();
-
         // After 1 second, set children of World with the same name as choice_invest visible
         Invoke("ShowWorldChildren", 0.2f);
     }
@@ -216,7 +208,7 @@ public class Choice_click : MonoBehaviour
 
         // If needed, add any additional logic for canceling the choice
 
-        questionpanel.SetActive(true);
+        questionpanel.enabled = true;
 
         mychoicebutton2.interactable = true;
         mychoicebutton3.interactable = true;

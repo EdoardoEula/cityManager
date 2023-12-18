@@ -264,6 +264,7 @@ public class SignUpManager : MonoBehaviour
             { "Cycling paths", defaultChoice },
             { "Parking2", defaultChoice },
             { "First necessities", defaultChoice },
+            { "Solar Panels", defaultChoice},
             { "Malls", defaultChoice },
             { "Pedestrian Area", defaultChoice },
             { "Incineration", defaultChoice },
@@ -321,6 +322,7 @@ public class SignUpManager : MonoBehaviour
             {"WASTE", defaultsituation},
             {"TRANSPORTS", defaultsituation},
             {"CYCLING", defaultsituation},
+            {"INSIDE BUILDING", defaultsituation}
         };
 
         // Get a reference to the user node in the database

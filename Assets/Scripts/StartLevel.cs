@@ -61,15 +61,12 @@ public class StartLevel : MonoBehaviour
                 {
                     string choiceName = choiceSnapshot.Key;
                     string choiceValue = choiceSnapshot.Value.ToString();
-                    Debug.Log($"{choiceName}: {choiceValue}");
 
                     // Find the corresponding GameObject in the 'World';
                     Transform choiceObject = World.transform.Find(choiceName);
 
                     if (choiceObject != null)
                     {
-                        Debug.Log("Game Object not null");
-                        Debug.Log(choiceObject.childCount);
                         // Iterate through the grandchildren of the choiceObject
 
                         choiceObject.GetChild(0).gameObject.SetActive(choiceValue == "No");
